@@ -1,0 +1,142 @@
+{
+  "question": "Which plants could be cultivated successfully on Mars?",
+  "assessment": "Conditional candidates for a protected greenhouse, supported by analog experiments. Not proof of actual-Mars success.",
+  "sources": {
+    "W2014": {
+      "citation": "Wamelink et al. (2014)",
+      "doi": "https://doi.org/10.1371/journal.pone.0103138",
+      "scope": "Earth greenhouse, JSC-1A Mars simulant; 50-day pot trial",
+      "temperature": "Mean 21.1 C; shared greenhouse protocol",
+      "treatment": "Study watering; no added nutrients",
+      "limitations": "No actual-Mars validation; the 50-day endpoint does not establish harvest for all crops."
+    },
+    "K2022": {
+      "citation": "Kasiviswanathan et al. (2022)",
+      "doi": "https://doi.org/10.1371/journal.pone.0272209",
+      "scope": "Earth growth facility; crushed-basalt regolith analog",
+      "temperature": "Follow source growth protocol; no crop-specific thermal response model fitted",
+      "treatment": "Alfalfa amendment and fresh water; water-treatment experiments also reported",
+      "limitations": "Perchlorate effects were not tested. Do not equate this basalt analog with untreated actual Mars regolith."
+    },
+    "G2024": {
+      "citation": "Goncalves et al. (2024)",
+      "doi": "https://doi.org/10.1371/journal.pone.0302149",
+      "scope": "Earth greenhouse; MMS-1; monocropping versus intercropping",
+      "temperature": "Mean 20.4 +/-1.7 C; RH 60.9 +/-15%; day/night 16/8 h",
+      "treatment": "Controlled water/nutrient protocol; compare cropping arrangements",
+      "limitations": "Intercropping did not improve total yield in MMS-1 (RYT 0.93). Perchlorates and initial sterility were bypassed."
+    },
+    "F2025": {
+      "citation": "Fava-bean experiment (2025)",
+      "doi": "https://doi.org/10.3389/fpls.2025.1676285",
+      "scope": "Earth glasshouse; MMS-1 pure versus compost-amended substrates",
+      "temperature": "Vegetative/flowering mean day/night 20.3/10.3 C; pod-filling 24.2/13.0 C",
+      "treatment": "MMS-1:green compost 70:30 v/v, fertigation; cultivar Sfardella",
+      "limitations": "Pure MMS-1 performed worse; cultivar and treatment specific. No mission-level validation."
+    }
+  },
+  "candidates": [
+    {
+      "plant": "Tomato",
+      "species": "Solanum lycopersicum",
+      "goal": "production",
+      "source": "G2024",
+      "outcome": "Fruit yield was measured in MMS-1.",
+      "condition": "Use a controlled greenhouse and tested nutrient/water regime; assess cropping arrangement.",
+      "actual_mars_tested": false,
+      "estimated_mars_probability": null,
+      "evidence_status": "Candidate supported by a terrestrial analog experiment; actual Mars untested"
+    },
+    {
+      "plant": "Carrot",
+      "species": "Daucus carota",
+      "goal": "production",
+      "source": "G2024",
+      "outcome": "Root yield was measured in MMS-1.",
+      "condition": "Assess compaction and nutrient supply; intercropping was not universally beneficial.",
+      "actual_mars_tested": false,
+      "estimated_mars_probability": null,
+      "evidence_status": "Candidate supported by a terrestrial analog experiment; actual Mars untested"
+    },
+    {
+      "plant": "Pea",
+      "species": "Pisum sativum",
+      "goal": "production",
+      "source": "G2024",
+      "outcome": "Seed yield was measured in MMS-1.",
+      "condition": "Do not assume rhizobial nodulation or nitrogen fixation will function in this substrate.",
+      "actual_mars_tested": false,
+      "estimated_mars_probability": null,
+      "evidence_status": "Candidate supported by a terrestrial analog experiment; actual Mars untested"
+    },
+    {
+      "plant": "Radish",
+      "species": "Raphanus sativus",
+      "goal": "production",
+      "source": "K2022",
+      "outcome": "Bulb biomass improved with alfalfa amendment.",
+      "condition": "The supporting regime used amended basalt analog and fresh water.",
+      "actual_mars_tested": false,
+      "estimated_mars_probability": null,
+      "evidence_status": "Candidate supported by a terrestrial analog experiment; actual Mars untested"
+    },
+    {
+      "plant": "Turnip",
+      "species": "Brassica rapa",
+      "goal": "production",
+      "source": "K2022",
+      "outcome": "Healthy bulbs were reported in amended analog.",
+      "condition": "Correct nutrient limitation and water salinity; untreated analog caused poor growth.",
+      "actual_mars_tested": false,
+      "estimated_mars_probability": null,
+      "evidence_status": "Candidate supported by a terrestrial analog experiment; actual Mars untested"
+    },
+    {
+      "plant": "Lettuce",
+      "species": "Lactuca sativa",
+      "goal": "production",
+      "source": "K2022",
+      "outcome": "Leaf biomass improved with alfalfa amendment.",
+      "condition": "The supporting regime used amended basalt analog and fresh water.",
+      "actual_mars_tested": false,
+      "estimated_mars_probability": null,
+      "evidence_status": "Candidate supported by a terrestrial analog experiment; actual Mars untested"
+    },
+    {
+      "plant": "Fava bean",
+      "species": "Vicia faba",
+      "goal": "production",
+      "source": "F2025",
+      "outcome": "Compost amendment improved seed production.",
+      "condition": "Use the studied amended substrate and fertigation; pure MMS-1 reduced performance.",
+      "actual_mars_tested": false,
+      "estimated_mars_probability": null,
+      "evidence_status": "Candidate supported by a terrestrial analog experiment; actual Mars untested"
+    },
+    {
+      "plant": "Garden cress",
+      "species": "Lepidium sativum",
+      "goal": "establishment",
+      "source": "W2014",
+      "outcome": "Survival and seed formation were reported.",
+      "condition": "Use source greenhouse conditions; the current numerical model concerns day-50 pot outcomes.",
+      "actual_mars_tested": false,
+      "estimated_mars_probability": null,
+      "evidence_status": "Candidate supported by a terrestrial analog experiment; actual Mars untested"
+    },
+    {
+      "plant": "Rye",
+      "species": "Secale cereale",
+      "goal": "establishment",
+      "source": "W2014",
+      "outcome": "Survival and flowering were observed.",
+      "condition": "Do not infer mature grain yield from the 50-day survival/flowering outcome.",
+      "actual_mars_tested": false,
+      "estimated_mars_probability": null,
+      "evidence_status": "Candidate supported by a terrestrial analog experiment; actual Mars untested"
+    }
+  ],
+  "ranking_policy": "Grouped by measured endpoint; no cross-study numerical success ranking",
+  "search_scope": "Focused evidence screen, four included sources; not an exhaustive systematic review",
+  "assessed_on": "2026-10-15"
+}

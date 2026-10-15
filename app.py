@@ -11,6 +11,7 @@ class Handler(BaseHTTPRequestHandler):
         self.send_response(status);self.send_header('Content-Type',kind);self.send_header('Content-Length',str(len(body)));self.end_headers();self.wfile.write(body)
     def do_GET(self):
         if self.path=='/health':self.respond({'status':'ok','model':'pot-level-cultivation-success-v2'})
+        elif self.path=='/api/candidates':self.respond(json.loads((ROOT/'data/candidate_evidence.json').read_text()))
         elif self.path=='/api/crop-reference':
             crop=pd.read_csv(ROOT/'data/Crop_recommendation.csv')
             rows=[]

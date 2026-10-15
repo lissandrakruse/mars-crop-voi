@@ -49,3 +49,6 @@ POST /api/scenario accepts temperature, ph, humidity, temperature_tolerance, ph_
 
 ## Mathematical foundation
 The site and executed notebook now document the actual implemented event definitions, eight-world distributions, empirical equality constraints, min/max LP objectives, analytic marginal bounds, greedy width-reduction selection and the endpoint-pruning proof. They distinguish identification intervals, pot-level Bayesian credible intervals, entropy-based expected information, and unidentifiable actual-Mars success. Exact equivalence to the earlier unavailable code is not claimed. See the Mathematical Foundation section on the site.
+
+## Direct answer: conditional plant candidates
+The landing page now opens with a source-linked candidate table grouped by cultivation outcome, based on four included analog studies (2014, 2022, 2024, 2025). It lists seven food-production candidates and two additional early-stage candidates, required substrate/protocol conditions and limitations. This is a focused evidence screen, not an exhaustive review or a cross-study quantitative success ranking. It does not label unassessed plants as failures. GET /api/candidates serves the auditable curation in data/candidate_evidence.json. The prior LP and outcome models remain below as supporting analyses, not substitutes for crop-yield evidence.
