@@ -17,8 +17,10 @@ class Handler(BaseHTTPRequestHandler):
                 row={'crop':label}
                 for f in ['N','P','K','temperature','humidity','ph','rainfall']:
                     row[f]={'min':float(g[f].min()),'median':float(g[f].median()),'max':float(g[f].max())}
+                row['phoenix_ph_matching_rows']=int(g.ph.between(7.2,8.2).sum())
+                row['dataset_rows']=len(g)
                 rows.append(row)
-            self.respond({'rows':rows,'interpretation':'Observed terrestrial ranges, not physiological limits or Mars success probabilities','overlap_with_trial_crops':[]})
+            self.respond({'phoenix_ph':{'point':7.7,'reported_uncertainty':0.5,'screen_window':[7.2,8.2],'source':'https://pubmed.ncbi.nlm.nih.gov/19574385/','meaning':'One landing site and measurement method; not a global Mars soil distribution or confidence interval'},'rows':rows,'interpretation':'Observed terrestrial ranges, not physiological limits or Mars success probabilities','overlap_with_trial_crops':[]})
         elif self.path=='/api/options':self.respond({'species':SPECIES,'endpoints':{k:v[1] for k,v in ENDPOINTS.items()}})
         elif self.path=='/api/mars':
             m=pd.read_csv(ROOT/'data/ds01_2020je006536rr.csv',encoding='latin1')

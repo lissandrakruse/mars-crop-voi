@@ -36,3 +36,6 @@ The previous interval_model.py is a retained legacy terrestrial crop-label demon
 Software checks cover all four crops, three endpoints and thresholds 1–5, posterior bounds and transfer calculations, invalid thresholds, source design and HTTP endpoints. They do not constitute biological or mission validation. Only one source experiment is included; independent studies and harvest data are needed before stronger recommendations.
 
 No external researcher is listed as a participant. Retain source attribution and applicable data terms. No blanket license over third-party data is granted; no open-source license for original project code has been selected.
+
+## pH candidate screen
+Phoenix reference: Hecht et al. (2009), https://pubmed.ncbi.nlm.nih.gov/19574385/, pH 7.7 +/-0.5 at one landing site. The Crop screen counts observed rows in 7.2–8.2. This is not a confidence interval or global soil distribution; analytical methods are unharmonized. Dataset counts are descriptive overlap, not success probabilities or verified physiological tolerances.
