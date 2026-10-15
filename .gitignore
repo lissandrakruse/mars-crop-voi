@@ -1,0 +1,5 @@
+__pycache__/
+.ipynb_checkpoints/
+crop_mars_outputs/
+crop_mars_results.zip
+.env

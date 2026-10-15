@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch" 
+ schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Observational xmlns="http://pds.nasa.gov/pds4/pds/v1"                                                             
+    xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"                                                                                                                                                        
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"                                                                  
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1  https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">               
+    <Identification_Area>                                                                                                   
+        <logical_identifier>urn:nasa:pds:msl_apxs_supplement_sols_0_2301:data:ds02_2020je006536rr</logical_identifier>                  
+        <version_id>1.0</version_id>                                                                                        
+        <title>Supporting Information Oxide Results Summary Table for Elemental composition and chemical evolution of geologic materials in Gale crater, Mars: APXS results from Bradbury Landing to the Vera Rubin Ridge</title>                                                                       
+        <information_model_version>1.12.0.0</information_model_version>                                                      
+        <product_class>Product_Observational</product_class>                                                                
+    </Identification_Area>
+    <Observation_Area>                                                                                                     
+        <Time_Coordinates>
+            <start_date_time>2012-09-22T14:23:16Z</start_date_time>
+            <stop_date_time>2019-01-26T23:21:12Z</stop_date_time>
+        </Time_Coordinates>
+        <Investigation_Area>                                                                                                
+            <name>Mars Science Laboratory</name>                                                                                          
+            <type>Mission</type>                                                                                            
+            <Internal_Reference>                                                                                            
+                <lid_reference>urn:nasa:pds:context:investigation:mission.mars_science_laboratory</lid_reference>                         
+                <reference_type>data_to_investigation</reference_type>                                                      
+            </Internal_Reference>                                                                                           
+        </Investigation_Area>  
+        <Observing_System>                                                                                   
+            <Observing_System_Component>                                                                                    
+                <name>Mars Science Laboratory</name>                                                                                      
+                <type>Spacecraft</type>                                                                                     
+                <Internal_Reference>                                                                                        
+                    <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.msl</lid_reference>                      
+                    <reference_type>is_instrument_host</reference_type>                                                     
+                </Internal_Reference>                                                                                       
+            </Observing_System_Component>
+            <Observing_System_Component>                                                                                    
+                <name>Alpha Particle X-ray Spectrometer</name>                                                                  
+                <type>Instrument</type>                                                                                     
+                <Internal_Reference>                                                                                        
+                    <lid_reference>urn:nasa:pds:context:instrument:apxs.msl</lid_reference>                                  
+                    <reference_type>is_instrument</reference_type>                                                          
+                </Internal_Reference>                                                                                       
+            </Observing_System_Component>         
+        </Observing_System>        
+        <Target_Identification>                                                                                             
+            <name>Mars</name>                                                                                               
+            <type>Planet</type>                                                                                             
+            <Internal_Reference>                                                                                            
+                <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>                                      
+                <reference_type>data_to_target</reference_type>                                                             
+            </Internal_Reference>                                                                                           
+        </Target_Identification>                                                                                           
+    </Observation_Area>
+    <Reference_List>                                                                                                        
+        <External_Reference>                                                                                                
+            <doi>10.1029/2020JE006536</doi>                                                                              
+            <reference_text>                                                                                                
+                Berger, J. A. et al. (2020), Elemental composition and chemical evolution of geologic materials in Gale crater, Mars:
+                APXS results from Bradbury Landing to the Vera Rubin Ridge, Journal of Geophysical Research: Planets, Volume 125, Issue 12, 
+                doi:10.1029/2020JE006536.                                             
+            </reference_text>                                                                                                
+        </External_Reference>                                                                                                                                                                                                      
+    </Reference_List>                                                                                                            
+    <File_Area_Observational>
+        <File>
+            <file_name>ds02_2020je006536rr.csv</file_name>
+            <creation_date_time>2020-10-02T09:52:00</creation_date_time>            
+        </File>
+        <Header>
+            <name>Column Headings</name>
+            <offset unit="byte">0</offset>
+            <object_length unit="byte">85</object_length>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <description>Comma-separated names of columns in the data table.</description>
+        </Header>
+        <Table_Delimited>
+            <name>Soil Target Summary</name>
+            <offset unit="byte">86</offset>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <records>7</records>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+            <field_delimiter>Comma</field_delimiter>
+            <Record_Delimited>
+                <fields>17</fields>
+                <groups>0</groups>
+				<Field_Delimited>
+                    <name>Name</name>
+                    <field_number>1</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <description>Description of Soil Data Statistic</description>
+                </Field_Delimited> 
+                <Field_Delimited>
+                    <name>SiO2</name>
+                    <field_number>2</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>SiO2 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>TiO2</name>
+                    <field_number>3</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>TiO2 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Al2O3</name>
+                    <field_number>4</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Al2O3 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>FeO</name>
+                    <field_number>5</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>FeO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>MnO</name>
+                    <field_number>6</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>MnO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>MgO</name>
+                    <field_number>7</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>MgO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>CaO</name>
+                    <field_number>8</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>CaO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Na2O</name>
+                    <field_number>9</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Na2O Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>K2O</name>
+                    <field_number>10</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>K2O Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>P2O5</name>
+                    <field_number>11</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>P2O5 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>SO3</name>
+                    <field_number>12</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>SO3 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Cl</name>
+                    <field_number>13</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Cl Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Cr2O3</name>
+                    <field_number>14</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Cr2O3 Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Ni_ppm</name>
+                    <field_number>15</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Ni Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Zn_ppm</name>
+                    <field_number>16</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Zn Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Br_ppm</name>
+                    <field_number>17</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Br Value</description>
+                </Field_Delimited>               
+            </Record_Delimited>
+        </Table_Delimited>
+		
+		
+		<Header>
+            <name>Column Headings</name>
+            <offset unit="byte">719</offset>
+            <object_length unit="byte">85</object_length>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <description>Comma-separated names of columns in the data table.</description>
+        </Header>
+        <Table_Delimited>
+            <name>Sand Target Summary</name>
+            <offset unit="byte">805</offset>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <records>7</records>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+            <field_delimiter>Comma</field_delimiter>
+            <Record_Delimited>
+                <fields>17</fields>
+                <groups>0</groups>
+				<Field_Delimited>
+                    <name>Name</name>
+                    <field_number>1</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <description>Description of Sand Data Statistic</description>
+                </Field_Delimited> 
+                <Field_Delimited>
+                    <name>SiO2</name>
+                    <field_number>2</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>SiO2 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>TiO2</name>
+                    <field_number>3</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>TiO2 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Al2O3</name>
+                    <field_number>4</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Al2O3 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>FeO</name>
+                    <field_number>5</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>FeO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>MnO</name>
+                    <field_number>6</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>MnO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>MgO</name>
+                    <field_number>7</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>MgO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>CaO</name>
+                    <field_number>8</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>CaO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Na2O</name>
+                    <field_number>9</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Na2O Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>K2O</name>
+                    <field_number>10</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>K2O Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>P2O5</name>
+                    <field_number>11</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>P2O5 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>SO3</name>
+                    <field_number>12</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>SO3 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Cl</name>
+                    <field_number>13</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Cl Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Cr2O3</name>
+                    <field_number>14</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Cr2O3 Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Ni_ppm</name>
+                    <field_number>15</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Ni Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Zn_ppm</name>
+                    <field_number>16</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Zn Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Br_ppm</name>
+                    <field_number>17</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Br Value</description>
+                </Field_Delimited>               
+            </Record_Delimited>
+        </Table_Delimited>
+		
+		<Header>
+            <name>Column Headings</name>
+            <offset unit="byte">1455</offset>
+            <object_length unit="byte">96</object_length>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <description>Comma-separated names of columns in the data table.</description>
+        </Header>
+        <Table_Delimited>
+            <name>Sheepbed Target Summary</name>
+            <offset unit="byte">1552</offset>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <records>7</records>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+            <field_delimiter>Comma</field_delimiter>
+            <Record_Delimited>
+                <fields>17</fields>
+                <groups>0</groups>
+				<Field_Delimited>
+                    <name>Name</name>
+                    <field_number>1</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <description>Description of Sheepbed Data Statistic</description>
+                </Field_Delimited> 
+                <Field_Delimited>
+                    <name>SiO2</name>
+                    <field_number>2</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>SiO2 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>TiO2</name>
+                    <field_number>3</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>TiO2 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Al2O3</name>
+                    <field_number>4</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Al2O3 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>FeO</name>
+                    <field_number>5</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>FeO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>MnO</name>
+                    <field_number>6</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>MnO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>MgO</name>
+                    <field_number>7</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>MgO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>CaO</name>
+                    <field_number>8</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>CaO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Na2O</name>
+                    <field_number>9</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Na2O Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>K2O</name>
+                    <field_number>10</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>K2O Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>P2O5</name>
+                    <field_number>11</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>P2O5 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>SO3</name>
+                    <field_number>12</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>SO3 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Cl</name>
+                    <field_number>13</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Cl Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Cr2O3</name>
+                    <field_number>14</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Cr2O3 Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Ni_ppm</name>
+                    <field_number>15</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Ni Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Zn_ppm</name>
+                    <field_number>16</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Zn Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Br_ppm</name>
+                    <field_number>17</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Br Value</description>
+                </Field_Delimited>               
+            </Record_Delimited>
+        </Table_Delimited>
+		
+		<Header>
+            <name>Column Headings</name>
+            <offset unit="byte">2227</offset>
+            <object_length unit="byte">100</object_length>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <description>Comma-separated names of columns in the data table.</description>
+        </Header>
+        <Table_Delimited>
+            <name>Potassic Target Summary</name>
+            <offset unit="byte">2327</offset>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <records>7</records>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+            <field_delimiter>Comma</field_delimiter>
+            <Record_Delimited>
+                <fields>17</fields>
+                <groups>0</groups>
+				<Field_Delimited>
+                    <name>Name</name>
+                    <field_number>1</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <description>Description of Potassic Data Statistic</description>
+                </Field_Delimited> 
+                <Field_Delimited>
+                    <name>SiO2</name>
+                    <field_number>2</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>SiO2 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>TiO2</name>
+                    <field_number>3</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>TiO2 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Al2O3</name>
+                    <field_number>4</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Al2O3 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>FeO</name>
+                    <field_number>5</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>FeO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>MnO</name>
+                    <field_number>6</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>MnO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>MgO</name>
+                    <field_number>7</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>MgO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>CaO</name>
+                    <field_number>8</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>CaO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Na2O</name>
+                    <field_number>9</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Na2O Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>K2O</name>
+                    <field_number>10</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>K2O Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>P2O5</name>
+                    <field_number>11</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>P2O5 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>SO3</name>
+                    <field_number>12</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>SO3 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Cl</name>
+                    <field_number>13</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Cl Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Cr2O3</name>
+                    <field_number>14</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Cr2O3 Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Ni_ppm</name>
+                    <field_number>15</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Ni Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Zn_ppm</name>
+                    <field_number>16</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Zn Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Br_ppm</name>
+                    <field_number>17</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Br Value</description>
+                </Field_Delimited>               
+            </Record_Delimited>
+        </Table_Delimited>
+		
+		<Header>
+            <name>Column Headings</name>
+            <offset unit="byte">3001</offset>
+            <object_length unit="byte">102</object_length>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <description>Comma-separated names of columns in the data table.</description>
+        </Header>
+        <Table_Delimited>
+            <name>Mugearitic Target Summary</name>
+            <offset unit="byte">3104</offset>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <records>7</records>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+            <field_delimiter>Comma</field_delimiter>
+            <Record_Delimited>
+                <fields>17</fields>
+                <groups>0</groups>
+				<Field_Delimited>
+                    <name>Name</name>
+                    <field_number>1</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <description>Description of Mugearitic Data Statistic</description>
+                </Field_Delimited> 
+                <Field_Delimited>
+                    <name>SiO2</name>
+                    <field_number>2</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>SiO2 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>TiO2</name>
+                    <field_number>3</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>TiO2 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Al2O3</name>
+                    <field_number>4</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Al2O3 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>FeO</name>
+                    <field_number>5</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>FeO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>MnO</name>
+                    <field_number>6</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>MnO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>MgO</name>
+                    <field_number>7</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>MgO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>CaO</name>
+                    <field_number>8</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>CaO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Na2O</name>
+                    <field_number>9</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Na2O Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>K2O</name>
+                    <field_number>10</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>K2O Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>P2O5</name>
+                    <field_number>11</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>P2O5 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>SO3</name>
+                    <field_number>12</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>SO3 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Cl</name>
+                    <field_number>13</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Cl Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Cr2O3</name>
+                    <field_number>14</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Cr2O3 Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Ni_ppm</name>
+                    <field_number>15</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Ni Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Zn_ppm</name>
+                    <field_number>16</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Zn Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Br_ppm</name>
+                    <field_number>17</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Br Value</description>
+                </Field_Delimited>               
+            </Record_Delimited>
+        </Table_Delimited>
+		
+		<Header>
+            <name>Column Headings</name>
+            <offset unit="byte">3767</offset>
+            <object_length unit="byte">198</object_length>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <description>Comma-separated names of columns in the data table.</description>
+        </Header>
+        <Table_Delimited>
+            <name>Murray Target Regional Summary</name>
+            <offset unit="byte">3966</offset>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <records>49</records>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+            <field_delimiter>Comma</field_delimiter>
+            <Record_Delimited>
+                <fields>17</fields>
+                <groups>0</groups>
+				<Field_Delimited>
+                    <name>Name</name>
+                    <field_number>1</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <description>Description of Murray Regional Data Statistic</description>
+                </Field_Delimited> 
+                <Field_Delimited>
+                    <name>SiO2</name>
+                    <field_number>2</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>SiO2 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>TiO2</name>
+                    <field_number>3</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>TiO2 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Al2O3</name>
+                    <field_number>4</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Al2O3 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>FeO</name>
+                    <field_number>5</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>FeO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>MnO</name>
+                    <field_number>6</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>MnO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>MgO</name>
+                    <field_number>7</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>MgO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>CaO</name>
+                    <field_number>8</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>CaO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Na2O</name>
+                    <field_number>9</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Na2O Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>K2O</name>
+                    <field_number>10</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>K2O Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>P2O5</name>
+                    <field_number>11</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>P2O5 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>SO3</name>
+                    <field_number>12</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>SO3 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Cl</name>
+                    <field_number>13</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Cl Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Cr2O3</name>
+                    <field_number>14</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Cr2O3 Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Ni_ppm</name>
+                    <field_number>15</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Ni Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Zn_ppm</name>
+                    <field_number>16</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Zn Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Br_ppm</name>
+                    <field_number>17</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Br Value</description>
+                </Field_Delimited>               
+            </Record_Delimited>
+        </Table_Delimited>
+		
+		<Header>
+            <name>Column Headings</name>
+            <offset unit="byte">8883</offset>
+            <object_length unit="byte">110</object_length>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <description>Comma-separated names of columns in the data table.</description>
+        </Header>
+        <Table_Delimited>
+            <name>Murray Target Summary</name>
+            <offset unit="byte">8994</offset>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <records>7</records>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+            <field_delimiter>Comma</field_delimiter>
+            <Record_Delimited>
+                <fields>17</fields>
+                <groups>0</groups>
+				<Field_Delimited>
+                    <name>Name</name>
+                    <field_number>1</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <description>Description of Murray Data Statistic</description>
+                </Field_Delimited> 
+                <Field_Delimited>
+                    <name>SiO2</name>
+                    <field_number>2</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>SiO2 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>TiO2</name>
+                    <field_number>3</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>TiO2 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Al2O3</name>
+                    <field_number>4</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Al2O3 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>FeO</name>
+                    <field_number>5</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>FeO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>MnO</name>
+                    <field_number>6</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>MnO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>MgO</name>
+                    <field_number>7</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>MgO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>CaO</name>
+                    <field_number>8</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>CaO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Na2O</name>
+                    <field_number>9</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Na2O Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>K2O</name>
+                    <field_number>10</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>K2O Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>P2O5</name>
+                    <field_number>11</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>P2O5 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>SO3</name>
+                    <field_number>12</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>SO3 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Cl</name>
+                    <field_number>13</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Cl Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Cr2O3</name>
+                    <field_number>14</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Cr2O3 Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Ni_ppm</name>
+                    <field_number>15</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Ni Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Zn_ppm</name>
+                    <field_number>16</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Zn Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Br_ppm</name>
+                    <field_number>17</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Br Value</description>
+                </Field_Delimited>               
+            </Record_Delimited>
+        </Table_Delimited>
+		
+		<Header>
+            <name>Column Headings</name>
+            <offset unit="byte">9763</offset>
+            <object_length unit="byte">115</object_length>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <description>Comma-separated names of columns in the data table.</description>
+        </Header>
+        <Table_Delimited>
+            <name>Stimson Target Summary</name>
+            <offset unit="byte">9879</offset>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <records>7</records>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+            <field_delimiter>Comma</field_delimiter>
+            <Record_Delimited>
+                <fields>17</fields>
+                <groups>0</groups>
+				<Field_Delimited>
+                    <name>Name</name>
+                    <field_number>1</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <description>Description of Stimson Data Statistic</description>
+                </Field_Delimited> 
+                <Field_Delimited>
+                    <name>SiO2</name>
+                    <field_number>2</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>SiO2 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>TiO2</name>
+                    <field_number>3</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>TiO2 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Al2O3</name>
+                    <field_number>4</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Al2O3 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>FeO</name>
+                    <field_number>5</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>FeO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>MnO</name>
+                    <field_number>6</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>MnO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>MgO</name>
+                    <field_number>7</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>MgO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>CaO</name>
+                    <field_number>8</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>CaO Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Na2O</name>
+                    <field_number>9</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Na2O Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>K2O</name>
+                    <field_number>10</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>K2O Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>P2O5</name>
+                    <field_number>11</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>P2O5 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>SO3</name>
+                    <field_number>12</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>SO3 Value</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Cl</name>
+                    <field_number>13</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Cl Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Cr2O3</name>
+                    <field_number>14</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Cr2O3 Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Ni_ppm</name>
+                    <field_number>15</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Ni Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Zn_ppm</name>
+                    <field_number>16</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Zn Value</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Br_ppm</name>
+                    <field_number>17</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Br Value</description>
+                </Field_Delimited>               
+            </Record_Delimited>
+        </Table_Delimited>
+    </File_Area_Observational>
+</Product_Observational>

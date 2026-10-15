@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch" 
+ schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Observational xmlns="http://pds.nasa.gov/pds4/pds/v1"                                                             
+    xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"                                                                                                                                                        
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"                                                                  
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1  https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">               
+    <Identification_Area>                                                                                                   
+        <logical_identifier>urn:nasa:pds:msl_apxs_supplement_sols_0_2301:data:ds01_2020je006536rr</logical_identifier>                  
+        <version_id>1.0</version_id>                                                                                        
+        <title>Supporting Information Oxide Results Table for Elemental composition and chemical evolution of geologic materials in Gale crater, Mars: APXS results from Bradbury Landing to the Vera Rubin Ridge</title>                                                                       
+        <information_model_version>1.12.0.0</information_model_version>                                                      
+        <product_class>Product_Observational</product_class>                                                                
+    </Identification_Area>
+    <Observation_Area>                                                                                                     
+        <Time_Coordinates>
+            <start_date_time>2012-09-22T14:23:16Z</start_date_time>
+            <stop_date_time>2019-01-26T23:21:12Z</stop_date_time>
+        </Time_Coordinates>
+        <Investigation_Area>                                                                                                
+            <name>Mars Science Laboratory</name>                                                                                          
+            <type>Mission</type>                                                                                            
+            <Internal_Reference>                                                                                            
+                <lid_reference>urn:nasa:pds:context:investigation:mission.mars_science_laboratory</lid_reference>                         
+                <reference_type>data_to_investigation</reference_type>                                                      
+            </Internal_Reference>                                                                                           
+        </Investigation_Area>  
+        <Observing_System>                                                                                   
+            <Observing_System_Component>                                                                                    
+                <name>Mars Science Laboratory</name>                                                                                      
+                <type>Spacecraft</type>                                                                                     
+                <Internal_Reference>                                                                                        
+                    <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.msl</lid_reference>                      
+                    <reference_type>is_instrument_host</reference_type>                                                     
+                </Internal_Reference>                                                                                       
+            </Observing_System_Component>
+            <Observing_System_Component>                                                                                    
+                <name>Alpha Particle X-ray Spectrometer</name>                                                                  
+                <type>Instrument</type>                                                                                     
+                <Internal_Reference>                                                                                        
+                    <lid_reference>urn:nasa:pds:context:instrument:apxs.msl</lid_reference>                                  
+                    <reference_type>is_instrument</reference_type>                                                          
+                </Internal_Reference>                                                                                       
+            </Observing_System_Component>         
+        </Observing_System>        
+        <Target_Identification>                                                                                             
+            <name>Mars</name>                                                                                               
+            <type>Planet</type>                                                                                             
+            <Internal_Reference>                                                                                            
+                <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>                                      
+                <reference_type>data_to_target</reference_type>                                                             
+            </Internal_Reference>                                                                                           
+        </Target_Identification>                                                                                           
+    </Observation_Area>
+    <Reference_List>                                                                                                        
+        <External_Reference>                                                                                                
+            <doi>10.1029/2020JE006536</doi>                                                                              
+            <reference_text>                                                                                                
+                Berger, J. A. et al. (2020), Elemental composition and chemical evolution of geologic materials in Gale crater, Mars:
+                APXS results from Bradbury Landing to the Vera Rubin Ridge, Journal of Geophysical Research: Planets, Volume 125, Issue 12, 
+                doi:10.1029/2020JE006536.                                             
+            </reference_text>                                                                                                
+        </External_Reference>                                                                                                                                                                                                        
+    </Reference_List>                                                                                                           
+    <File_Area_Observational>
+        <File>
+            <file_name>ds01_2020je006536rr.csv</file_name>
+            <creation_date_time>2020-10-02T09:52:00</creation_date_time>           
+        </File>
+        <Header>
+            <name>Column Headings</name>
+            <offset unit="byte">0</offset>
+            <object_length unit="byte">502</object_length>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <description>Comma-separated names of columns in the data table.</description>
+        </Header>
+        <Table_Delimited>
+            <name>APXS Oxide Results Table Sols 0 to 2301</name>
+            <offset unit="byte">503</offset>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <records>712</records>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+            <field_delimiter>Comma</field_delimiter>
+            <Record_Delimited>
+                <fields>55</fields>
+                <groups>0</groups>
+                <Field_Delimited>
+                    <name>Sol</name>
+                    <field_number>1</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Sol Measurement Started</description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Target</name>
+                    <field_number>2</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <description>Target Name</description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Sample_site</name>
+                    <field_number>3</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <description>General Target Location</description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Best_drill</name>
+                    <field_number>4</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <description>APXS Measurement of Material Delivered to CheMin and/or SAM</description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Strat_group</name>
+                    <field_number>5</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <description>Stratigraphic Group Containing Target</description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Strat_fm.</name>
+                    <field_number>6</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <description>Stratigraphic Formation Containing Target</description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Strat_mbr.</name>
+                    <field_number>7</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <description>Stratigraphic Member Containing Target</description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Informal_waypoint/outcrop_name</name>
+                    <field_number>8</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <description>Alternative Name for Waypoint/Outcrop</description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Ca-S_notes</name>
+                    <field_number>9</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <description>Notes Pertaining to Likely Calcium-Sulfate Contamination</description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Comment/Interpretation</name>
+                    <field_number>10</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <description>Other Target Comments</description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Preparation_method</name>
+                    <field_number>11</field_number>
+                    <data_type>UTF8_String</data_type>
+                    <description>Sample Preparation for Measurement</description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Fit_Type</name>
+                    <field_number>12</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <description>Spectral Analysis Routine Applied</description>
+                </Field_Delimited>  
+				<Field_Delimited>
+                    <name>Start_Time</name>
+                    <field_number>13</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <description>Measurement LMST Start</description>
+                </Field_Delimited>
+				<Field_Delimited>
+                    <name>Latitude</name>
+                    <field_number>14</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Target Latitude (Degrees)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Longitude</name>
+                    <field_number>15</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Target Longitude (Degrees)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Elevation</name>
+                    <field_number>16</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Target Elevation (Meters)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Northing</name>
+                    <field_number>17</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Target Northing (Meters)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Easting</name>
+                    <field_number>18</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Target Easting (Meters)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Elevation</name>
+                    <field_number>19</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Target Elevation (Meters)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Standoff</name>
+                    <field_number>20</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Estimated Separation Between APXS Contact Sensor and Target Surface (cm)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>SH_Temp</name>
+                    <field_number>21</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Average Measurement Sensor-Head Temperature (Celsius)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Lifetime</name>
+                    <field_number>22</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <description>Duration of Measurement (HH:MM:SS)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>FWHM</name>
+                    <field_number>23</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Spectrum Resolution (eV at 5.9 keV)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Na2O</name>
+                    <field_number>24</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Na2O Concentration (wt%)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Na2O_err</name>
+                    <field_number>25</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Precision Error in Na2O Concentration (wt%)</description>
+                </Field_Delimited>
+				<Field_Delimited>
+                    <name>MgO</name>
+                    <field_number>26</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>MgO Concentration (wt%)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>MgO_err</name>
+                    <field_number>27</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Precision Error in MgO Concentration (wt%)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Al2O3</name>
+                    <field_number>28</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Al2O3 Concentration (wt%)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Al2O3_err</name>
+                    <field_number>29</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Precision Error in Al2O3 Concentration (wt%)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>SiO2</name>
+                    <field_number>30</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>SiO2 Concentration (wt%)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>SiO2_err</name>
+                    <field_number>31</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Precision Error in SiO2 Concentration (wt%)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>P2O5</name>
+                    <field_number>32</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>P2O5 Concentration (wt%)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>P2O5_err</name>
+                    <field_number>33</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Precision Error in P2O5 Concentration (wt%)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>SO3</name>
+                    <field_number>34</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>SO3 Concentration (wt%)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>SO3_err</name>
+                    <field_number>35</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Precision Error in SO3 Concentration (wt%)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Cl</name>
+                    <field_number>36</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Cl Concentration (wt%)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Cl_err</name>
+                    <field_number>37</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Precision Error in Cl Concentration (wt%)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>K2O</name>
+                    <field_number>38</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>K2O Concentration (wt%)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>K2O_err</name>
+                    <field_number>39</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Precision Error in K2O Concentration (wt%)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>CaO</name>
+                    <field_number>40</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>CaO Concentration (wt%)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>CaO_err</name>
+                    <field_number>41</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Precision Error in CaO Concentration (wt%)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>TiO2</name>
+                    <field_number>42</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>TiO2 Concentration (wt%)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>TiO2_err</name>
+                    <field_number>43</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Precision Error in TiO2 Concentration (wt%)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Cr2O3</name>
+                    <field_number>44</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Cr2O3 Concentration (wt%)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Cr2O3_err</name>
+                    <field_number>45</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Precision Error in Cr2O3 Concentration (wt%)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>MnO</name>
+                    <field_number>46</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>MnO Concentration (wt%)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>MnO_err</name>
+                    <field_number>47</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Precision Error in MnO Concentration (wt%)</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>FeO</name>
+                    <field_number>48</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>FeO Concentration (wt%)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>FeO_err</name>
+                    <field_number>49</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Precision Error in FeO Concentration (wt%)</description>
+                </Field_Delimited>
+  				<Field_Delimited>
+                    <name>Ni</name>
+                    <field_number>50</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Ni Concentration (ppm)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Ni_err</name>
+                    <field_number>51</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Precision Error in Ni Concentration (ppm)</description>
+                </Field_Delimited>
+  				<Field_Delimited>
+                    <name>Zn</name>
+                    <field_number>52</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Zn Concentration (ppm)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Zn_err</name>
+                    <field_number>53</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Precision Error in Zn Concentration (ppm)</description>
+                </Field_Delimited> 
+  				<Field_Delimited>
+                    <name>Br</name>
+                    <field_number>54</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Br Concentration (ppm)</description>
+                </Field_Delimited> 
+				<Field_Delimited>
+                    <name>Br_err</name>
+                    <field_number>55</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Precision Error in Br Concentration (ppm)</description>
+                </Field_Delimited>  				
+            </Record_Delimited>
+        </Table_Delimited>
+    </File_Area_Observational>
+</Product_Observational>
