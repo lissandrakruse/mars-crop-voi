@@ -50,8 +50,8 @@ class Handler(BaseHTTPRequestHandler):
                 allowed={'temperature','ph','humidity','temperature_tolerance','ph_tolerance','humidity_tolerance','budget'}
                 if set(p)-allowed:raise ValueError('Unknown scenario fields')
                 self.respond(scenario(**p));return
-            minimum=float(p.get('minimum',3));transfer=p.get('transfer')
-            d=estimate(str(p.get('species','S. lycopersicum')),str(p.get('endpoint','alive50')),minimum,transfer)
+            minimum=float(p.get('minimum',3));mission_transfer=p.get('transfer')
+            d=estimate(str(p.get('species','S. lycopersicum')),str(p.get('endpoint','alive50')),minimum,mission_transfer)
             d['crop_comparison']=ranking(d['endpoint'],d['minimum']);self.respond(d)
         except (ValueError,KeyError,TypeError,json.JSONDecodeError) as e:self.respond({'error':str(e)},status=400)
 if __name__=='__main__':ThreadingHTTPServer(('0.0.0.0',int(os.environ.get('PORT','10000'))),Handler).serve_forever()
