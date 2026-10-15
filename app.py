@@ -3,6 +3,7 @@ from pathlib import Path
 from http.server import BaseHTTPRequestHandler,ThreadingHTTPServer
 import pandas as pd
 from success_model import estimate,ranking,SPECIES,ENDPOINTS
+from scenario_model import scenario
 ROOT=Path(__file__).parent
 class Handler(BaseHTTPRequestHandler):
     def respond(self,body,kind='application/json',status=200):
@@ -29,12 +30,16 @@ class Handler(BaseHTTPRequestHandler):
         elif self.path=='/':self.respond((ROOT/'index.html').read_bytes(),'text/html; charset=utf-8')
         else:self.respond({'error':'Not found'},status=404)
     def do_POST(self):
-        if self.path!='/api/success':self.respond({'error':'Not found'},status=404);return
+        if self.path not in ['/api/success','/api/scenario']:self.respond({'error':'Not found'},status=404);return
         try:
             size=int(self.headers.get('Content-Length','0'))
             if not 0<size<=10000:raise ValueError('Invalid request size')
             p=json.loads(self.rfile.read(size))
             if not isinstance(p,dict):raise ValueError('Expected JSON object')
+            if self.path=='/api/scenario':
+                allowed={'temperature','ph','humidity','temperature_tolerance','ph_tolerance','humidity_tolerance','budget'}
+                if set(p)-allowed:raise ValueError('Unknown scenario fields')
+                self.respond(scenario(**p));return
             minimum=float(p.get('minimum',3));transfer=p.get('transfer')
             d=estimate(str(p.get('species','S. lycopersicum')),str(p.get('endpoint','alive50')),minimum,transfer)
             d['crop_comparison']=ranking(d['endpoint'],d['minimum']);self.respond(d)

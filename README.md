@@ -39,3 +39,10 @@ No external researcher is listed as a participant. Retain source attribution and
 
 ## pH candidate screen
 Phoenix reference: Hecht et al. (2009), https://pubmed.ncbi.nlm.nih.gov/19574385/, pH 7.7 +/-0.5 at one landing site. The Crop screen counts observed rows in 7.2–8.2. This is not a confidence interval or global soil distribution; analytical methods are unharmonized. Dataset counts are descriptive overlap, not success probabilities or verified physiological tolerances.
+
+## Joint greenhouse temperature + soil-pH interval module
+The main page now includes an editable temperature, pH and air-humidity scenario with analysis-window widths and a pairwise-constraint budget (0–3). `scenario_model.py` independently implements finite-world LP bounds using eight worlds, empirical per-crop marginals, greedy pairwise-constraint selection and endpoint-witness pruning. Full reoptimization and pruned versions use the same budgets and tie-breaking and must agree within 1e-7. Exact empirical joint overlap is held out of selected constraints and checked against every interval.
+
+The event is a randomly selected terrestrial row for a given crop lying inside all three analysis windows. It is not physiological suitability, cultivation success or a Mars probability. Actual Mars success remains unidentified [0,1] in this module, because the Crop labels do not contain success responses. NPK availability, salinity, perchlorates and water retention are unlinked; APXS oxides are not substituted. Soil pH is included with an explicit analytical-method caveat. Temperature is a greenhouse scenario, not outdoor Mars temperature.
+
+POST /api/scenario accepts temperature, ph, humidity, temperature_tolerance, ph_tolerance, humidity_tolerance and integer budget. Tests cover budgets 0,2,3, an alternate scenario, full/pruned agreement, monotonically narrowing intervals, empirical joint containment and invalid inputs. Default software check: 264 full versus 94 pruned solver calls. This count is specific to the chosen scenario and solver witnesses, not a general speedup claim. The executed notebook includes this module and exports its bounds.
