@@ -1,0 +1,735 @@
+{
+  "sources": {
+    "lettuce": "https://doi.org/10.17632/r7z9ttvkyh.2",
+    "arugula": "https://doi.org/10.17632/jbknff2kpv.1"
+  },
+  "hashes": {
+    "Greenhouse Climate & Crop data_Exp_c.xlsx": "9f1e30ba54175524d744469bcd25956e32100514fbd66fef1df8495606ab364a",
+    "Greenhouse Climate & Crop data_Exp_v1.xlsx": "808b9dfef3723fba8b714c7614691d2c9a41b838cb5d6c8a70e2a81b9f4792a0",
+    "Greenhouse Climate & Crop data_Exp_v2.xlsx": "d91634782d6ca6291f0cef99e5465b418e5f1fb8eab65d86e9fe367876ab3ba1",
+    "IPK.csv": "5dd347dbdf3f482a08f9f1ee6f89ebd48ed251331c5e8fd5796ee29c5a95fb08"
+  },
+  "lettuce": [
+    {
+      "experiment": "c",
+      "climate_rows": 14401,
+      "plant_observations": 204,
+      "sampling_dates": 12,
+      "climate_missing": {
+        "co2": 0,
+        "temperature": 0,
+        "humidity": 0,
+        "radiation": 0
+      },
+      "temperature_range": [
+        -0.9800000000000001,
+        35.519999999999996
+      ],
+      "humidity_range": [
+        20.580000000000002,
+        99.62
+      ],
+      "samples": [
+        {
+          "date": "2020-11-24T00:00:00.000",
+          "dry": 0.0487166667,
+          "fresh": 0.7183333333,
+          "area": 22.3733333333,
+          "n": 6,
+          "age": -5.0
+        },
+        {
+          "date": "2020-11-29T00:00:00.000",
+          "dry": 0.1112111111,
+          "fresh": 1.3133333333,
+          "area": 37.6294444444,
+          "n": 18,
+          "age": 0.0
+        },
+        {
+          "date": "2020-12-04T00:00:00.000",
+          "dry": 0.2210055556,
+          "fresh": 2.8933333333,
+          "area": 78.0127777778,
+          "n": 18,
+          "age": 5.0
+        },
+        {
+          "date": "2020-12-09T00:00:00.000",
+          "dry": 0.3780944444,
+          "fresh": 5.6444444444,
+          "area": 149.2716666667,
+          "n": 18,
+          "age": 10.0
+        },
+        {
+          "date": "2020-12-14T00:00:00.000",
+          "dry": 0.7440388889,
+          "fresh": 11.2988888889,
+          "area": 282.1622222222,
+          "n": 18,
+          "age": 15.0
+        },
+        {
+          "date": "2020-12-19T00:00:00.000",
+          "dry": 1.5265533333,
+          "fresh": 22.3594444444,
+          "area": 529.5327777778,
+          "n": 18,
+          "age": 20.0
+        },
+        {
+          "date": "2020-12-24T00:00:00.000",
+          "dry": 2.6591666667,
+          "fresh": 43.4322222222,
+          "area": 999.9905555556,
+          "n": 18,
+          "age": 25.0
+        },
+        {
+          "date": "2020-12-29T00:00:00.000",
+          "dry": 3.9418055556,
+          "fresh": 67.2055555556,
+          "area": 1447.0527777778,
+          "n": 18,
+          "age": 30.0
+        },
+        {
+          "date": "2021-01-03T00:00:00.000",
+          "dry": 5.3741166667,
+          "fresh": 92.6516666667,
+          "area": 1863.1294444444,
+          "n": 18,
+          "age": 35.0
+        },
+        {
+          "date": "2021-01-08T00:00:00.000",
+          "dry": 7.7056611111,
+          "fresh": 118.4805555556,
+          "area": 2666.7694444444,
+          "n": 18,
+          "age": 40.0
+        },
+        {
+          "date": "2021-01-13T00:00:00.000",
+          "dry": 10.8318333333,
+          "fresh": 194.9983333333,
+          "area": 4085.2455555556,
+          "n": 18,
+          "age": 45.0
+        },
+        {
+          "date": "2021-01-18T00:00:00.000",
+          "dry": 13.0391611111,
+          "fresh": 258.9538888889,
+          "area": 5543.9594444444,
+          "n": 18,
+          "age": 50.0
+        }
+      ]
+    },
+    {
+      "experiment": "v1",
+      "climate_rows": 10081,
+      "plant_observations": 132,
+      "sampling_dates": 8,
+      "climate_missing": {
+        "co2": 0,
+        "temperature": 0,
+        "humidity": 0,
+        "radiation": 0
+      },
+      "temperature_range": [
+        -0.7999999999999999,
+        42.6
+      ],
+      "humidity_range": [
+        7.359999999999999,
+        100.0
+      ],
+      "samples": [
+        {
+          "date": "2020-04-09T00:00:00.000",
+          "dry": 0.3888833333,
+          "fresh": 5.4583333333,
+          "area": 146.4666666667,
+          "n": 6,
+          "age": 0.0
+        },
+        {
+          "date": "2020-04-14T00:00:00.000",
+          "dry": 0.7663555556,
+          "fresh": 6.9222222222,
+          "area": 172.5977777778,
+          "n": 18,
+          "age": 5.0
+        },
+        {
+          "date": "2020-04-19T00:00:00.000",
+          "dry": 1.1207722222,
+          "fresh": 11.9277777778,
+          "area": 285.4477777778,
+          "n": 18,
+          "age": 10.0
+        },
+        {
+          "date": "2020-04-24T00:00:00.000",
+          "dry": 1.5936388889,
+          "fresh": 21.3794444444,
+          "area": 451.3338888889,
+          "n": 18,
+          "age": 15.0
+        },
+        {
+          "date": "2020-04-29T00:00:00.000",
+          "dry": 3.6395333333,
+          "fresh": 62.4072222222,
+          "area": 1097.1444444444,
+          "n": 18,
+          "age": 20.0
+        },
+        {
+          "date": "2020-05-04T00:00:00.000",
+          "dry": 6.1852277778,
+          "fresh": 129.4861111111,
+          "area": 1885.8405555556,
+          "n": 18,
+          "age": 25.0
+        },
+        {
+          "date": "2020-05-09T00:00:00.000",
+          "dry": 8.1488277778,
+          "fresh": 193.9155555556,
+          "area": 2511.895,
+          "n": 18,
+          "age": 30.0
+        },
+        {
+          "date": "2020-05-14T00:00:00.000",
+          "dry": 12.4020444444,
+          "fresh": 264.9588888889,
+          "area": 3085.4905555556,
+          "n": 18,
+          "age": 35.0
+        }
+      ]
+    },
+    {
+      "experiment": "v2",
+      "climate_rows": 12961,
+      "plant_observations": 66,
+      "sampling_dates": 11,
+      "climate_missing": {
+        "co2": 0,
+        "temperature": 0,
+        "humidity": 0,
+        "radiation": 0
+      },
+      "temperature_range": [
+        3.9,
+        36.0
+      ],
+      "humidity_range": [
+        19.3,
+        100.0
+      ],
+      "samples": [
+        {
+          "date": "2022-01-25T00:00:00.000",
+          "dry": 0.0586666667,
+          "fresh": 1.49,
+          "area": 55.4083333333,
+          "n": 6,
+          "age": -5.0
+        },
+        {
+          "date": "2022-01-30T00:00:00.000",
+          "dry": 0.1715833333,
+          "fresh": 2.4316666667,
+          "area": 86.495,
+          "n": 6,
+          "age": 0.0
+        },
+        {
+          "date": "2022-02-04T00:00:00.000",
+          "dry": 0.3742833333,
+          "fresh": 4.9566666667,
+          "area": 138.4316666667,
+          "n": 6,
+          "age": 5.0
+        },
+        {
+          "date": "2022-02-09T00:00:00.000",
+          "dry": 0.8151166667,
+          "fresh": 11.24,
+          "area": 263.555,
+          "n": 6,
+          "age": 10.0
+        },
+        {
+          "date": "2022-02-14T00:00:00.000",
+          "dry": 0.9580833333,
+          "fresh": 15.0133333333,
+          "area": 332.075,
+          "n": 6,
+          "age": 15.0
+        },
+        {
+          "date": "2022-02-19T00:00:00.000",
+          "dry": 2.3124166667,
+          "fresh": 38.4,
+          "area": 786.2466666667,
+          "n": 6,
+          "age": 20.0
+        },
+        {
+          "date": "2022-02-24T00:00:00.000",
+          "dry": 4.1802563333,
+          "fresh": 73.0466666667,
+          "area": 1354.8333333333,
+          "n": 6,
+          "age": 25.0
+        },
+        {
+          "date": "2022-03-01T00:00:00.000",
+          "dry": 6.7915333333,
+          "fresh": 149.775,
+          "area": 2512.575,
+          "n": 6,
+          "age": 30.0
+        },
+        {
+          "date": "2022-03-06T00:00:00.000",
+          "dry": 11.3317833333,
+          "fresh": 234.1983333333,
+          "area": 4198.5416666667,
+          "n": 6,
+          "age": 35.0
+        },
+        {
+          "date": "2022-03-11T00:00:00.000",
+          "dry": 13.85105,
+          "fresh": 391.7833333333,
+          "area": 5613.2816666667,
+          "n": 6,
+          "age": 40.0
+        },
+        {
+          "date": "2022-03-16T00:00:00.000",
+          "dry": 16.953,
+          "fresh": 473.92,
+          "area": 7065.575,
+          "n": 6,
+          "age": 45.0
+        }
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "experiment": "v1",
+      "model": "age_only",
+      "intervals": 6,
+      "mae_g": 0.5677828036363478,
+      "rmse_g": 0.7901084556989374
+    },
+    {
+      "experiment": "v1",
+      "model": "age_and_environment",
+      "intervals": 6,
+      "mae_g": 0.7702649962815281,
+      "rmse_g": 1.0112508191961573
+    },
+    {
+      "experiment": "v2",
+      "model": "age_only",
+      "intervals": 8,
+      "mae_g": 1.025881448006393,
+      "rmse_g": 1.421281215351565
+    },
+    {
+      "experiment": "v2",
+      "model": "age_and_environment",
+      "intervals": 8,
+      "mae_g": 1.5806268950436149,
+      "rmse_g": 2.6667247592908065
+    }
+  ],
+  "predictions": [
+    {
+      "experiment": "v1",
+      "model": "age_only",
+      "age": 5.0,
+      "days": 5,
+      "initial_g": 0.7663555555555556,
+      "observed_g": 1.1207722222222223,
+      "predicted_g": 1.374353868309193,
+      "nearest_standardized_distance": 0.0
+    },
+    {
+      "experiment": "v1",
+      "model": "age_only",
+      "age": 10.0,
+      "days": 5,
+      "initial_g": 1.1207722222222223,
+      "observed_g": 1.593638888888889,
+      "predicted_g": 1.9723350770466415,
+      "nearest_standardized_distance": 0.0
+    },
+    {
+      "experiment": "v1",
+      "model": "age_only",
+      "age": 15.0,
+      "days": 5,
+      "initial_g": 1.593638888888889,
+      "observed_g": 3.6395333333333335,
+      "predicted_g": 2.7262022474207885,
+      "nearest_standardized_distance": 0.0
+    },
+    {
+      "experiment": "v1",
+      "model": "age_only",
+      "age": 20.0,
+      "days": 5,
+      "initial_g": 3.6395333333333335,
+      "observed_g": 6.1852277777777775,
+      "predicted_g": 6.001545125090738,
+      "nearest_standardized_distance": 0.0
+    },
+    {
+      "experiment": "v1",
+      "model": "age_only",
+      "age": 25.0,
+      "days": 5,
+      "initial_g": 6.1852277777777775,
+      "observed_g": 8.148827777777777,
+      "predicted_g": 9.782249409967905,
+      "nearest_standardized_distance": 0.0
+    },
+    {
+      "experiment": "v1",
+      "model": "age_only",
+      "age": 30.0,
+      "days": 5,
+      "initial_g": 8.148827777777777,
+      "observed_g": 12.402044444444444,
+      "predicted_g": 12.358060827660793,
+      "nearest_standardized_distance": 0.0
+    },
+    {
+      "experiment": "v1",
+      "model": "age_and_environment",
+      "age": 5.0,
+      "days": 5,
+      "initial_g": 0.7663555555555556,
+      "observed_g": 1.1207722222222223,
+      "predicted_g": 1.300333853664139,
+      "nearest_standardized_distance": 6.825785004146652
+    },
+    {
+      "experiment": "v1",
+      "model": "age_and_environment",
+      "age": 10.0,
+      "days": 5,
+      "initial_g": 1.1207722222222223,
+      "observed_g": 1.593638888888889,
+      "predicted_g": 1.8686688118564687,
+      "nearest_standardized_distance": 13.34239169539599
+    },
+    {
+      "experiment": "v1",
+      "model": "age_and_environment",
+      "age": 15.0,
+      "days": 5,
+      "initial_g": 1.593638888888889,
+      "observed_g": 3.6395333333333335,
+      "predicted_g": 2.718505461796039,
+      "nearest_standardized_distance": 12.97786211888188
+    },
+    {
+      "experiment": "v1",
+      "model": "age_and_environment",
+      "age": 20.0,
+      "days": 5,
+      "initial_g": 3.6395333333333335,
+      "observed_g": 6.1852277777777775,
+      "predicted_g": 6.223504103135565,
+      "nearest_standardized_distance": 8.782709898808426
+    },
+    {
+      "experiment": "v1",
+      "model": "age_and_environment",
+      "age": 25.0,
+      "days": 5,
+      "initial_g": 6.1852277777777775,
+      "observed_g": 8.148827777777777,
+      "predicted_g": 9.882052121798813,
+      "nearest_standardized_distance": 2.440369716165144
+    },
+    {
+      "experiment": "v1",
+      "model": "age_and_environment",
+      "age": 30.0,
+      "days": 5,
+      "initial_g": 8.148827777777777,
+      "observed_g": 12.402044444444444,
+      "predicted_g": 13.876514326808,
+      "nearest_standardized_distance": 10.118824752392788
+    },
+    {
+      "experiment": "v2",
+      "model": "age_only",
+      "age": 5.0,
+      "days": 5,
+      "initial_g": 0.37428333333333336,
+      "observed_g": 0.8151166666666666,
+      "predicted_g": 0.671225964607802,
+      "nearest_standardized_distance": 0.0
+    },
+    {
+      "experiment": "v2",
+      "model": "age_only",
+      "age": 10.0,
+      "days": 5,
+      "initial_g": 0.8151166666666666,
+      "observed_g": 0.9580833333333333,
+      "predicted_g": 1.434442397550103,
+      "nearest_standardized_distance": 0.0
+    },
+    {
+      "experiment": "v2",
+      "model": "age_only",
+      "age": 15.0,
+      "days": 5,
+      "initial_g": 0.9580833333333333,
+      "observed_g": 2.3124166666666666,
+      "predicted_g": 1.6389716357705182,
+      "nearest_standardized_distance": 0.0
+    },
+    {
+      "experiment": "v2",
+      "model": "age_only",
+      "age": 20.0,
+      "days": 5,
+      "initial_g": 2.3124166666666666,
+      "observed_g": 4.180256333333333,
+      "predicted_g": 3.8131462750751672,
+      "nearest_standardized_distance": 0.0
+    },
+    {
+      "experiment": "v2",
+      "model": "age_only",
+      "age": 25.0,
+      "days": 5,
+      "initial_g": 4.180256333333333,
+      "observed_g": 6.791533333333334,
+      "predicted_g": 6.611286038192816,
+      "nearest_standardized_distance": 0.0
+    },
+    {
+      "experiment": "v2",
+      "model": "age_only",
+      "age": 30.0,
+      "days": 5,
+      "initial_g": 6.791533333333334,
+      "observed_g": 11.331783333333334,
+      "predicted_g": 10.299663256511645,
+      "nearest_standardized_distance": 0.0
+    },
+    {
+      "experiment": "v2",
+      "model": "age_only",
+      "age": 35.0,
+      "days": 5,
+      "initial_g": 11.331783333333334,
+      "observed_g": 13.85105,
+      "predicted_g": 16.54543427794355,
+      "nearest_standardized_distance": 0.0
+    },
+    {
+      "experiment": "v2",
+      "model": "age_only",
+      "age": 40.0,
+      "days": 5,
+      "initial_g": 13.85105,
+      "observed_g": 16.953000000000003,
+      "predicted_g": 19.59249507871544,
+      "nearest_standardized_distance": 0.0
+    },
+    {
+      "experiment": "v2",
+      "model": "age_and_environment",
+      "age": 5.0,
+      "days": 5,
+      "initial_g": 0.37428333333333336,
+      "observed_g": 0.8151166666666666,
+      "predicted_g": 0.5982764548679103,
+      "nearest_standardized_distance": 2.132019236941404
+    },
+    {
+      "experiment": "v2",
+      "model": "age_and_environment",
+      "age": 10.0,
+      "days": 5,
+      "initial_g": 0.8151166666666666,
+      "observed_g": 0.9580833333333333,
+      "predicted_g": 1.2451412153693933,
+      "nearest_standardized_distance": 1.5381223145708063
+    },
+    {
+      "experiment": "v2",
+      "model": "age_and_environment",
+      "age": 15.0,
+      "days": 5,
+      "initial_g": 0.9580833333333333,
+      "observed_g": 2.3124166666666666,
+      "predicted_g": 1.4517172430263203,
+      "nearest_standardized_distance": 2.2919596144288867
+    },
+    {
+      "experiment": "v2",
+      "model": "age_and_environment",
+      "age": 20.0,
+      "days": 5,
+      "initial_g": 2.3124166666666666,
+      "observed_g": 4.180256333333333,
+      "predicted_g": 3.7695403713616455,
+      "nearest_standardized_distance": 3.8762058338115235
+    },
+    {
+      "experiment": "v2",
+      "model": "age_and_environment",
+      "age": 25.0,
+      "days": 5,
+      "initial_g": 4.180256333333333,
+      "observed_g": 6.791533333333334,
+      "predicted_g": 6.989381890024767,
+      "nearest_standardized_distance": 3.377229606345522
+    },
+    {
+      "experiment": "v2",
+      "model": "age_and_environment",
+      "age": 30.0,
+      "days": 5,
+      "initial_g": 6.791533333333334,
+      "observed_g": 11.331783333333334,
+      "predicted_g": 11.439627150128757,
+      "nearest_standardized_distance": 5.169756885585011
+    },
+    {
+      "experiment": "v2",
+      "model": "age_and_environment",
+      "age": 35.0,
+      "days": 5,
+      "initial_g": 11.331783333333334,
+      "observed_g": 13.85105,
+      "predicted_g": 19.168648658597974,
+      "nearest_standardized_distance": 4.142706241121616
+    },
+    {
+      "experiment": "v2",
+      "model": "age_and_environment",
+      "age": 40.0,
+      "days": 5,
+      "initial_g": 13.85105,
+      "observed_g": 16.953000000000003,
+      "predicted_g": 22.199410648817242,
+      "nearest_standardized_distance": 2.3125955724437373
+    }
+  ],
+  "training_intervals": 9,
+  "arugula": {
+    "rows": 16,
+    "columns": 72,
+    "accessions": 16,
+    "traits": 68,
+    "total_fresh_weight_g": {
+      "min": 14.16727273,
+      "median": 35.352261905000006,
+      "max": 54.41666667
+    },
+    "records": [
+      {
+        "Label": "A37",
+        "Accession number": "ERU 12",
+        "TFW": 41.295
+      },
+      {
+        "Label": "A38",
+        "Accession number": "ERU 125",
+        "TFW": 32.76625
+      },
+      {
+        "Label": "A39",
+        "Accession number": "ERU 13",
+        "TFW": 54.41666667
+      },
+      {
+        "Label": "A41",
+        "Accession number": "ERU 143",
+        "TFW": 41.12090909
+      },
+      {
+        "Label": "A42",
+        "Accession number": "ERU 152",
+        "TFW": 14.26666667
+      },
+      {
+        "Label": "A43",
+        "Accession number": "ERU 155",
+        "TFW": 34.77166667
+      },
+      {
+        "Label": "A44",
+        "Accession number": "ERU 156",
+        "TFW": 41.34166667
+      },
+      {
+        "Label": "A45",
+        "Accession number": "ERU 20",
+        "TFW": 25.3475
+      },
+      {
+        "Label": "A46",
+        "Accession number": "ERU 21",
+        "TFW": 14.45333333
+      },
+      {
+        "Label": "A51",
+        "Accession number": "ERU 23",
+        "TFW": 37.911
+      },
+      {
+        "Label": "A52",
+        "Accession number": "ERU 24",
+        "TFW": 35.93285714
+      },
+      {
+        "Label": "A53",
+        "Accession number": "ERU 28 ",
+        "TFW": 22.27833333
+      },
+      {
+        "Label": "A54",
+        "Accession number": "ERU 41",
+        "TFW": 14.16727273
+      },
+      {
+        "Label": "A55",
+        "Accession number": "ERU 51",
+        "TFW": 50.455
+      },
+      {
+        "Label": "A56",
+        "Accession number": "ERU 79",
+        "TFW": 32.10583333
+      },
+      {
+        "Label": "A76",
+        "Accession number": "ERU 118",
+        "TFW": 49.17416667
+      }
+    ]
+  },
+  "method": "Exploratory retrospective interval prediction. Exp_c only for training and scaling. Fixed Gaussian bandwidth=1. Target: next sampling mean total dry weight g/plant, initialized with measured current mean. Features use climate observed during the interval; this is conditional reconstruction, not an advance weather forecast. All individual raw samples, excluding Average/SD rows and TOP12. No binary survival or Mars probability. Destructive samples and shared greenhouse conditions prevent interpreting plants/readings as independent experiments. Only two held-out experiments; no tuning on their outcomes; no causal claim."
+}
