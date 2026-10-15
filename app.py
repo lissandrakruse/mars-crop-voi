@@ -1,32 +1,27 @@
-"""Minimal, dependency-free project landing page and health endpoint."""
-import json
-import os
-from http.server import BaseHTTPRequestHandler, HTTPServer
-
+import json,os
+from pathlib import Path
+from http.server import BaseHTTPRequestHandler,ThreadingHTTPServer
+from interval_model import analyze,DATA
+ROOT=Path(__file__).parent
 class Handler(BaseHTTPRequestHandler):
+    def respond(self,body,kind='application/json',status=200):
+        if not isinstance(body,bytes):body=json.dumps(body,allow_nan=False).encode()
+        self.send_response(status);self.send_header('Content-Type',kind);self.send_header('Content-Length',str(len(body)));self.end_headers();self.wfile.write(body)
     def do_GET(self):
-        if self.path == '/health':
-            body = json.dumps({'status': 'ok'}).encode()
-            content_type = 'application/json'
-        elif self.path == '/':
-            body = b'''<!doctype html><html lang="en"><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Mars Crop VOI</title><style>body{background:#101826;color:#edf2f7;font:18px system-ui;max-width:850px;margin:10vh auto;padding:24px}h1{color:#f7ad80}p{line-height:1.7}a{color:#9bdacc}</style>
-<h1>Mars Crop VOI</h1><p>Exploratory crop similarity and experimental-design research.</p>
-<p>Project author: Lissandra Kruse Fuganti.</p>
-<h2>Evidence</h2><p>Embedded terrestrial Crop Recommendation data and real Curiosity/APXS geochemical observations are available in the project notebook. Bulk chemistry is not plant-available nutrient content.</p>
-<h2>Research status</h2><p>Greenhouse similarity scenarios are hypothetical. Mars cultivation probabilities and value-of-information calculations have not yet been implemented or validated.</p>
-<p>This initial service provides project information and a health endpoint. Interactive analyses are the next development stage.</p>
-<p><a href="https://doi.org/10.17189/1519050">NASA PDS APXS source</a></p></html>'''
-            content_type = 'text/html; charset=utf-8'
-        else:
-            self.send_error(404)
-            return
-        self.send_response(200)
-        self.send_header('Content-Type', content_type)
-        self.send_header('Content-Length', str(len(body)))
-        self.end_headers()
-        self.wfile.write(body)
-
-if __name__ == '__main__':
-    HTTPServer(('0.0.0.0', int(os.environ.get('PORT', '10000'))), Handler).serve_forever()
+        if self.path=='/health':self.respond({'status':'ok'})
+        elif self.path=='/api/crops':self.respond(sorted(DATA.label.unique().tolist()))
+        elif self.path=='/api/mars':
+            m=pd.read_csv(ROOT/'data/ds01_2020je006536rr.csv',encoding='latin1')
+            s=m[m.Strat_group.eq('Soil')][['Sol','Target','P2O5','K2O','Comments/Interpretation']].fillna('')
+            self.respond({'source':'https://doi.org/10.17189/1519050','units':'P2O5 and K2O: wt% bulk oxides, not bioavailable nutrients','rows':s.to_dict('records')})
+        elif self.path=='/':self.respond((ROOT/'index.html').read_bytes(),'text/html; charset=utf-8')
+        else:self.respond({'error':'Not found'},status=404)
+    def do_POST(self):
+        if self.path!='/api/analyze':self.respond({'error':'Not found'},status=404);return
+        try:
+            size=int(self.headers.get('Content-Length','0'))
+            if not 0<size<=10000:raise ValueError('Invalid request size')
+            p=json.loads(self.rfile.read(size));self.respond(analyze(str(p['crop']),float(p['temperature']),float(p['humidity']),float(p['ph']),int(p.get('budget',6))))
+        except (ValueError,KeyError,TypeError,json.JSONDecodeError) as e:self.respond({'error':str(e)},status=400)
+import pandas as pd
+if __name__=='__main__':ThreadingHTTPServer(('0.0.0.0',int(os.environ.get('PORT','10000'))),Handler).serve_forever()

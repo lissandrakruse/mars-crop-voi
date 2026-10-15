@@ -3,6 +3,9 @@ services:
     name: mars-crop-voi
     runtime: python
     plan: free
-    buildCommand: python -m compileall -q app.py
+    buildCommand: pip install -r requirements.txt
     startCommand: python app.py
     healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
