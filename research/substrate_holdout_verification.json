@@ -1,0 +1,19 @@
+{
+  "endpoint": "at least 3 living plants at day 50",
+  "design": "retrospective leave-one-entire-substrate-out within the same greenhouse study",
+  "source_pots_per_species": 40,
+  "target_pots_per_species": 20,
+  "species": 14,
+  "target_substrates": 3,
+  "weights": [
+    0,
+    0.1,
+    0.5,
+    1
+  ],
+  "target_outcomes_used_in_fitting": false,
+  "weight_selection_performed": false,
+  "environmental_distance_evaluated": false,
+  "external_validation": false,
+  "warning": "Only three substrate domains; source and target share blocks and greenhouse. Coverage is descriptive across 42 cells. Weights are sensitivity settings, not estimated environmental responses."
+}

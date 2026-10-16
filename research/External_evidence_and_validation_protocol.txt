@@ -1,0 +1,37 @@
+EXTERNAL EVIDENCE AND VALIDATION PROTOCOL
+Revision 16 October 2026. Proposal, not preregistration. No new experiment executed.
+
+Scope of search
+A targeted feasibility check inspected two obvious follow-up experiments in the regolith-cultivation literature. This is not an exhaustive or systematic review. Search terms included Wamelink crop growth seed viability and Mars intercropping. Primary records, access date, DOI and exclusion reasons are in external_eligibility_audit.csv. Lack of a recovered matched endpoint is not proof that unpublished data do not exist. No author was contacted.
+
+Estimand
+For a named cultivar, seed lot, protocol, substrate treatment and 50-day window, estimate the probability a five-seed pot has at least three living plants. This is an establishment endpoint; edible production needs a separate outcome model. Species names alone do not establish cultivar exchangeability. Retrospective source threshold and crop selection are disclosed.
+
+Eligibility before numerical transport
+Retain independent experiment, chamber run, block and pot identifiers. Require comparable biological event, horizon, cultivar, initial density, thinning, medium and management. Record temperature and humidity exposure; CO2 and total pressure; canopy airflow; PPFD, spectrum and photoperiod; substrate, pH method, nutrient supply, irrigation and water chemistry. Label setpoints separately from observations. Critical missing conditions block cultivation recommendations. A demonstration score can still be displayed with its missing panel, but cannot supply a validated target probability.
+
+Frozen evaluation
+Register the feature panel, scales, critical-variable gates, competing methods, source inclusion rules, outcome, missingness rules and evaluation code before target collection. Source-based weights must not be tuned using target test outcomes. A proposed engineering relevance margin is 0.01 Brier units; stakeholders must choose it before target collection. The present proposal must not be represented as an existing preregistration.
+
+A calibration cohort provides the same target-data allowance to every borrowing method. Later independent chamber runs provide the scored cohort. Compare weighted source borrowing, unweighted borrowing, target-only estimation and a simple environmental regression. Target-only means the same target calibration cohort with no source likelihood. With no target calibration data it reduces to a prior reference, not an empirically fitted target model.
+
+Primary contrast is weighted-minus-unweighted mean Brier on identical target pots, aggregated at independent run level. Proposed success criterion: upper 95 percent confidence limit below -0.01, with a prespecified acceptable calibration and abstention profile. Report comparisons to target-only estimation as well; an apparent advantage over unweighted borrowing does not establish utility if target-only performs better. Define the inferential method using the planned number of independent runs; if too few runs, report descriptive estimates rather than artificial pot-level confidence. Do not select a favorable crop, target environment or weight after inspecting test results.
+
+Experiment design
+Start with a feasibility pilot using one short-cycle cultivar and five seeds per pot. For CO2 and airflow, use a randomized 2 by 2 chamber-level factorial. Proposed levels 450/1900 ppm and 0.1/0.3 m/s are testable engineering targets, not proven agronomic optima. Replicate each treatment across independent chamber runs; rotate assignments among physical chambers. Include chamber and period identifiers and monitor leaf-zone conditions. Multiple pots in one treated chamber do not replicate the chamber treatment.
+
+Use pilot run-to-run variation and intrachamber dependence to simulate the number of independent runs required for the chosen predictive margin and desired precision. No powered run count can be claimed from the single-greenhouse source dataset. Log all randomized pots and failures.
+
+Follow with lighting experiments separating spectrum from photon dose, and substrate by irrigation experiments with pH-method and chemical characterization. Match cultivar and timing. Preserve survival as primary endpoint for this validation and measure edible biomass, food safety and resource use as separate secondary endpoints. A subsequent matched flight/ground comparison requires hardware access and a new protocol; terrestrial chamber success does not validate microgravity or Martian gravity.
+
+Interpretation of the executed transport stress test
+The held-out substrate is completely absent from model fitting. However, all domains share one greenhouse and experimental blocks. Four fixed weights are sensitivity settings, not a learned environmental kernel. Target outcomes were used only for scoring. No weight was chosen as best for deployment. Predictive count coverage uses 14 species cells per substrate; these are heterogeneous and share experimental conditions. No binomial confidence interval or significance test treating them as independent environments is reported.
+
+Prior reference and abstention
+With w=0 the Beta(1,1) predictive mean is 0.5. This is an uninformative mathematical reference, not a measured 50 percent chance of success. The 95 percent beta-binomial count interval covers all possible counts in this n=20 example; its perfect coverage reflects width, not model skill. Scientific abstention withholds a recommendation and is not an estimate of 0.5.
+
+Mathematical limitation
+For equal prior parameters of one, mean_w - 0.5 = w(k - n/2)/(2 + wn). Distance weighting changes evidence strength and shrinkage; it is not a mechanistic environmental response. With equal n and a shared positive w, order by k is preserved. A method intended to change biological rankings needs candidate-specific validated environmental responses or independently tested candidate-specific borrowing, not a rebranding of the same shared discount.
+
+Reproduction
+Run analyze.py and strengthen_analysis.py for the original source reanalysis. Run transport_stress_test.py for the new holdout outputs, and make_transport_figure.py for Figure 6. Dependencies: numpy, pandas, scipy, matplotlib; plotting uses an available Nimbus Sans font with fallback if absent. No random simulation is involved in transport_stress_test.py. Figures are not independent evidence beyond their underlying tables.
