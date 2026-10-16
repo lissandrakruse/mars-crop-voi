@@ -1,0 +1,43 @@
+Species,Soil,successes,pots
+A. montana,Earth,0,20
+A. montana,Mars,0,20
+A. montana,Moon,0,20
+C. palustre,Earth,8,20
+C. palustre,Mars,12,20
+C. palustre,Moon,5,20
+D. carota,Earth,16,20
+D. carota,Mars,19,20
+D. carota,Moon,3,20
+F. rubra,Earth,19,20
+F. rubra,Mars,20,20
+F. rubra,Moon,10,20
+L. angustifolius,Earth,5,20
+L. angustifolius,Mars,5,20
+L. angustifolius,Moon,0,20
+L. pendunculatus,Earth,16,20
+L. pendunculatus,Mars,20,20
+L. pendunculatus,Moon,1,20
+L. sativum,Earth,18,20
+L. sativum,Mars,20,20
+L. sativum,Moon,6,20
+M. officinalis,Earth,7,20
+M. officinalis,Mars,12,20
+M. officinalis,Moon,4,20
+S. arvensis,Earth,0,20
+S. arvensis,Mars,2,20
+S. arvensis,Moon,0,20
+S. cereale,Earth,18,20
+S. cereale,Mars,20,20
+S. cereale,Moon,13,20
+S. lycopersicum,Earth,12,20
+S. lycopersicum,Mars,18,20
+S. lycopersicum,Moon,4,20
+S. reflexum,Earth,20,20
+S. reflexum,Mars,20,20
+S. reflexum,Moon,13,20
+U. dioica,Earth,7,20
+U. dioica,Mars,11,20
+U. dioica,Moon,0,20
+V. sativa sativa,Earth,1,20
+V. sativa sativa,Mars,2,20
+V. sativa sativa,Moon,0,20
