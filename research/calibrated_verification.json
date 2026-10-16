@@ -1,0 +1,25 @@
+{
+  "folds": 2,
+  "split": "odd versus even source-study blocks; roles swapped",
+  "source_pots_per_prediction": 20,
+  "target_calibration_pots": 10,
+  "test_pots_per_species_target_fold": 10,
+  "scored_pots_per_method": 840,
+  "target_test_outcomes_used_in_fitting": false,
+  "fixed_discounts": [
+    0.1,
+    0.5,
+    1.0
+  ],
+  "mixture_prior_masses": [
+    0.1,
+    0.5,
+    0.9
+  ],
+  "main_mixture_prior_mass": 0.5,
+  "main_mixture_chosen_before_this_script_was_run": true,
+  "retrospective_analysis": true,
+  "external_validation": false,
+  "environmental_kernel_tested": false,
+  "note": "All methods have identical target calibration data. Blocks held out simultaneously across every substrate. No hyperparameter optimized on heldout outcomes; no CI treating two folds or pots as independent environments."
+}

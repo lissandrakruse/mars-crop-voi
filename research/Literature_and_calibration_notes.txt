@@ -1,0 +1,51 @@
+SCIENTIFIC FOUNDATION AND ADDITIONAL CALIBRATION ANALYSIS
+16 October 2026. No preregistration, new cultivation experiment or external validation.
+
+Claim-to-source map
+Wheeler et al. 2024, Journal of Plant Interactions 19:2292219.
+DOI 10.1080/17429145.2023.2292219. Full article inspected through NASA NTRS.
+A chamber experiment directly manipulates CO2 in multiple leafy crops. Supports measuring cultivar-specific responses and testing a nonlinear response, not assigning a common CO2 benefit. Biomass and nutrient outcomes are not our pot-survival event. No raw replicate data were incorporated. Proposed 450/1900 ppm pilot levels remain engineering choices, not the tested levels from this paper.
+
+Kitaya et al. 2003, Advances in Space Research 31:177–182.
+DOI 10.1016/S0273-1177(02)00747-0. Primary experimental abstract inspected.
+Air speed manipulated over 0.01–1.0 m/s; gas exchange measured in sweetpotato leaves and tomato seedling canopies. Supports an airflow treatment and canopy measurement. It does not establish universal crop-specific optima or long-duration Martian growth responses. Proposed pilot airflow levels are not recommendations inferred from this paper.
+
+Kim et al. 2004, Annals of Botany 94:691–697.
+DOI 10.1093/aob/mch192. Primary article abstract inspected via NASA NTRS.
+Lighting spectra were experimentally varied and lettuce stomatal conductance and dry matter measured. Supports recording spectrum separately from PPFD and DLI and distinguishing physiology from harvested yield. No universal response coefficient was transferred to our crops.
+
+Khodadad et al. 2020, Frontiers in Plant Science 11:199.
+DOI 10.3389/fpls.2020.00199. Full primary article inspected.
+ISS lettuce was compared with ground controls informed by flight environmental records and a delay. Supports separate flight and ground labels, hardware-specific canopy observations, and distinct microbiological/nutritional assays. It neither validates the terrestrial simulant endpoint nor makes flight/ground a pure gravity contrast. NASA metadata and this publication may represent overlapping experiments, so they are not independent studies to be counted twice.
+
+Schmidli et al. 2014, Biometrics 70:1023–1032.
+DOI 10.1111/biom.12242. Primary methodological article summary inspected.
+Robust mixtures combine informative and weak components to mitigate historical/current conflict. This motivates an established statistical comparator, not a claim of a novel borrowing algorithm. Our simple conjugate mixture pools two source substrates and lacks the hierarchical meta-analysis of their original clinical application. Those clinical results do not establish agronomic transportability.
+
+Executed calibration experiment
+All analysis is retrospective in the Wamelink 2014 dataset. Odd versus even blocks define two complementary training/test partitions. For each species and target substrate, training uses 20 source pots from the other two substrates and 10 target calibration pots. The opposite 10 target pots are held out; every substrate in a held-out block is excluded from fitting. Roles are swapped and every pot is scored once for each method.
+
+Uniform prior: Beta(1,1).
+Source component: Beta(1+k_s, 1+n_s-k_s), with n_s=20.
+Weak component: Beta(1,1).
+Initial source component mass pi=0.5 defines the main mixture; pi=0.1 and pi=0.9 are sensitivity analyses. Fixed-discount comparators use w=0.1, 0.5 and 1. No value was optimized on scored outcomes.
+
+For calibration counts k_c out of n_c=10, define
+m_1 = B(1+k_s+k_c, 1+n_s-k_s+n_c-k_c) / B(1+k_s, 1+n_s-k_s)
+m_0 = B(1+k_c, 1+n_c-k_c) / B(1,1)
+rho = pi*m_1 / (pi*m_1 + (1-pi)*m_0)
+The binomial coefficient is common to both components and cancels in rho.
+The posterior mean is rho*(1+k_s+k_c)/(2+n_s+n_c) + (1-rho)*(1+k_c)/(2+n_c).
+Use log-beta functions for numerical stability. Calibration outcomes affect rho; held-out outcomes are used only for scoring.
+
+Overall held-out Brier scores
+Target only 0.1213458994708994
+Main mixture pi=0.5 0.1232174338078438
+Full source borrowing 0.1592796688988095
+The main mixture mitigates full borrowing but fails to outperform target-only estimation overall. Do not choose pi=0.1 as a discovered optimum after observing its score. All sensitivities are disclosed.
+
+No inferential superiority claim
+Two complementary folds in one greenhouse are not two independent validation experiments. Their training/test partitions overlap across folds. We report descriptive scores, not significance or confidence intervals treating pots, folds or species as independent environments. The environmental-distance kernel is not tested in this analysis. Scores must not be compared directly with the no-target-calibration experiment because the information available differs.
+
+Reproduction
+Run python calibrated_borrowing.py with numpy, pandas and scipy. Outputs: calibrated_predictions.csv, calibrated_metrics.csv, calibrated_overall.csv, calibrated_mixture_weights.csv and calibrated_verification.json. No hyperparameter selection is performed. No simulation or new biological trial is represented as empirical replication.
