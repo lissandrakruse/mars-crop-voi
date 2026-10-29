@@ -1,0 +1,1076 @@
+{
+  "version": "2.3-lettuce-evidence",
+  "date": "2026-10-29",
+  "studies": [
+    {
+      "id": "pellegri",
+      "cultivar": "Grand Rapids",
+      "title": {
+        "pt": "Grand Rapids · química e colheita",
+        "en": "Grand Rapids · chemistry and harvest"
+      },
+      "summary": {
+        "pt": "K reduzido: massa seca aérea 19,2% menor que Controle 2; os dois controles já diferem 13,7%. Contrastes descritivos, não efeitos isolados.",
+        "en": "Reduced K: shoot dry mass 19.2% below Control 2; the two controls themselves differ 13.7%. Descriptive contrasts, not isolated effects."
+      },
+      "design": {
+        "pt": "4 ensaios sequenciais de 28 dias; 62 amostras de solução; 10 plantas subamostradas por ensaio compartilhado.",
+        "en": "4 sequential 28-day runs; 62 solution samples; 10 plant subsamples per shared run."
+      },
+      "chemistry": {
+        "pt": "NO3, NH4, K, P, Ca, Mg, S, Na, Cl medidos. pH alvo 5,9; EC alvo 1,9 mS/cm ou rampa a 4,6 no NaCl; alvos não são séries medidas.",
+        "en": "Measured NO3, NH4, K, P, Ca, Mg, S, Na, Cl. pH target5.9; EC target1.9 mS/cm or ramp to4.6 for NaCl; targets are not measured time series."
+      },
+      "limitations": {
+        "pt": "NaNO3 substitui KNO3: muda mais de um íon. Sequência, equipamento, metais-traço, CO2 e interrupção de controle confundem os contrastes. Sem perclorato.",
+        "en": "NaNO3 replaces KNO3: more than one ion changes. Sequence, equipment, trace metals, CO2 and control interruption confound contrasts. No perchlorate."
+      },
+      "tables": [
+        {
+          "title": {
+            "pt": "Perfis de solução: médias temporais de 28 dias",
+            "en": "Solution profiles: 28-day time-weighted averages"
+          },
+          "columns": [
+            {
+              "pt": "Ensaio",
+              "en": "Run"
+            },
+            {
+              "pt": "NO3 mg/L",
+              "en": "NO3 mg/L"
+            },
+            {
+              "pt": "NH4 mg/L",
+              "en": "NH4 mg/L"
+            },
+            {
+              "pt": "K mg/L",
+              "en": "K mg/L"
+            },
+            {
+              "pt": "P mg/L",
+              "en": "P mg/L"
+            },
+            {
+              "pt": "Ca mg/L",
+              "en": "Ca mg/L"
+            },
+            {
+              "pt": "Mg mg/L",
+              "en": "Mg mg/L"
+            },
+            {
+              "pt": "S mg/L",
+              "en": "S mg/L"
+            },
+            {
+              "pt": "Na mg/L",
+              "en": "Na mg/L"
+            },
+            {
+              "pt": "Cl mg/L",
+              "en": "Cl mg/L"
+            }
+          ],
+          "rows": [
+            [
+              "Control_1",
+              703.95,
+              42.654,
+              167.011,
+              36.936,
+              146.118,
+              23.175,
+              57.675,
+              25.068,
+              11.914
+            ],
+            [
+              "+NaCl",
+              743.059,
+              28.384,
+              162.095,
+              34.63,
+              136.273,
+              22.962,
+              54.118,
+              557.716,
+              802.109
+            ],
+            [
+              "-K",
+              759.496,
+              37.404,
+              19.561,
+              37.668,
+              142.414,
+              25.654,
+              55.339,
+              121.714,
+              8.632
+            ],
+            [
+              "Control_2",
+              704.054,
+              34.304,
+              162.175,
+              34.614,
+              136.104,
+              24.121,
+              55.921,
+              29.154,
+              5.889
+            ]
+          ],
+          "note": {
+            "pt": "Integração trapezoidal / 28 dias; interpolação linear entre amostras. Não é absorção nem dose aplicada. S é massa de enxofre do sulfato; NO3/NH4 são massa do íon.",
+            "en": "Trapezoidal integral / 28 days; linear interpolation between samples. Not uptake or administered dose. S is sulfur mass from sulfate; NO3/NH4 are ion mass."
+          }
+        },
+        {
+          "title": {
+            "pt": "Colheita publicada",
+            "en": "Published harvest"
+          },
+          "columns": [
+            {
+              "pt": "Ensaio",
+              "en": "Run"
+            },
+            {
+              "pt": "Massa fresca aérea g/planta",
+              "en": "Shoot fresh mass g/plant"
+            },
+            {
+              "pt": "DP entre plantas",
+              "en": "Plant SD"
+            },
+            {
+              "pt": "Massa seca aérea g/planta",
+              "en": "Shoot dry mass g/plant"
+            },
+            {
+              "pt": "DP entre plantas",
+              "en": "Plant SD"
+            }
+          ],
+          "rows": [
+            [
+              "Control_1",
+              275.0,
+              87.0,
+              22.0,
+              4.3
+            ],
+            [
+              "+NaCl",
+              342.0,
+              50.0,
+              23.0,
+              3.0
+            ],
+            [
+              "-K",
+              283.0,
+              92.0,
+              20.6,
+              3.0
+            ],
+            [
+              "Control_2",
+              351.0,
+              92.0,
+              25.5,
+              4.5
+            ]
+          ],
+          "note": {
+            "pt": "DP descreve subamostras, não incerteza entre reservatórios independentes.",
+            "en": "SD describes subsamples, not uncertainty between independent reservoirs."
+          }
+        }
+      ],
+      "source_url": "https://doi.org/10.3389/fspas.2026.1687731"
+    },
+    {
+      "id": "bannon",
+      "cultivar": "Red Batavia",
+      "title": {
+        "pt": "Red Batavia · manejo e nutrientes",
+        "en": "Red Batavia · management and nutrients"
+      },
+      "summary": {
+        "pt": "Troca semanal apresentou +23,0% de massa fresca do componente de rendimento versus reposição de volume, sem teste causal novo.",
+        "en": "Weekly replacement showed +23.0% yield-component fresh mass versus top-up, without a new causal test."
+      },
+      "design": {
+        "pt": "3 sistemas por regime em períodos diferentes; 384 posições de colheita, 379 pares numéricos de massa fresca total + componente de rendimento, não 379 tratamentos independentes.",
+        "en": "3 systems per regime in different periods;384 harvest slots,379 numeric overall + yield-component fresh-mass pairs, not 379 independent treatments."
+      },
+      "chemistry": {
+        "pt": "NO3 como N, P, K, Ca, Mg, SO4, Fe, Mn e EC. Sem série bruta de pH, Na, Cl ou NH4; sem perclorato.",
+        "en": "NO3 as N, P, K, Ca, Mg, SO4, Fe, Mn and EC. No raw pH, Na, Cl or NH4 series; no perchlorate."
+      },
+      "limitations": {
+        "pt": "Manejo confundido com calendário. Cinco posições vazias, um seco ausente; duas inconsistências de massa e proporcionalidades exatas com origem não resolvida. Não inferimos fabricação; requer auditoria humana.",
+        "en": "Management confounded with calendar. Five empty slots, one missing dry value; two mass inconsistencies and exact proportionalities with unresolved origin. No fabrication inference; human audit needed."
+      },
+      "tables": [
+        {
+          "title": {
+            "pt": "Solução inicial → final por regime",
+            "en": "Initial → final solution by regime"
+          },
+          "columns": [
+            {
+              "pt": "Regime",
+              "en": "Regime"
+            },
+            {
+              "pt": "Analito",
+              "en": "Analyte"
+            },
+            {
+              "pt": "Unidade",
+              "en": "Unit"
+            },
+            {
+              "pt": "Sistemas",
+              "en": "Systems"
+            },
+            {
+              "pt": "Inicial",
+              "en": "Initial"
+            },
+            {
+              "pt": "Final",
+              "en": "Final"
+            }
+          ],
+          "rows": [
+            [
+              "T1",
+              "calcium_mg_L",
+              "mg Ca/L",
+              3,
+              107.767,
+              87.867
+            ],
+            [
+              "T1",
+              "ec_mS_cm",
+              "mS/cm",
+              3,
+              1.2,
+              1.0
+            ],
+            [
+              "T1",
+              "iron_mg_L",
+              "mg Fe/L",
+              3,
+              3.077,
+              2.187
+            ],
+            [
+              "T1",
+              "magnesium_mg_L",
+              "mg Mg/L",
+              3,
+              27.0,
+              20.1
+            ],
+            [
+              "T1",
+              "manganese_mg_L",
+              "mg Mn/L",
+              3,
+              0.293,
+              0.17
+            ],
+            [
+              "T1",
+              "nitrate_N_mg_L",
+              "mg N/L",
+              3,
+              106.933,
+              91.033
+            ],
+            [
+              "T1",
+              "phosphate_P_mg_L",
+              "mg P/L",
+              3,
+              19.49,
+              16.933
+            ],
+            [
+              "T1",
+              "potassium_mg_L",
+              "mg K/L",
+              3,
+              117.0,
+              96.633
+            ],
+            [
+              "T1",
+              "sulfate_mg_L",
+              "mg SO4/L",
+              3,
+              97.0,
+              80.1
+            ],
+            [
+              "T2",
+              "calcium_mg_L",
+              "mg Ca/L",
+              3,
+              102.1,
+              45.5
+            ],
+            [
+              "T2",
+              "ec_mS_cm",
+              "mS/cm",
+              3,
+              1.2,
+              0.8
+            ],
+            [
+              "T2",
+              "iron_mg_L",
+              "mg Fe/L",
+              3,
+              3.033,
+              0.963
+            ],
+            [
+              "T2",
+              "magnesium_mg_L",
+              "mg Mg/L",
+              3,
+              27.233,
+              12.2
+            ],
+            [
+              "T2",
+              "manganese_mg_L",
+              "mg Mn/L",
+              3,
+              0.283,
+              0.117
+            ],
+            [
+              "T2",
+              "nitrate_N_mg_L",
+              "mg N/L",
+              3,
+              106.6,
+              46.4
+            ],
+            [
+              "T2",
+              "phosphate_P_mg_L",
+              "mg P/L",
+              3,
+              17.667,
+              7.333
+            ],
+            [
+              "T2",
+              "potassium_mg_L",
+              "mg K/L",
+              3,
+              118.433,
+              59.367
+            ],
+            [
+              "T2",
+              "sulfate_mg_L",
+              "mg SO4/L",
+              3,
+              100.3,
+              45.233
+            ]
+          ],
+          "note": {
+            "pt": "Médias com peso igual por sistema; snapshots, não dose integrada ou absorção. T1: troca semanal; T2: reposição de volume.",
+            "en": "Equal-system means; snapshots, not integrated dose or uptake. T1: weekly replacement; T2: volume top-up."
+          }
+        },
+        {
+          "title": {
+            "pt": "Componente de rendimento: médias descritivas",
+            "en": "Yield component: descriptive means"
+          },
+          "columns": [
+            {
+              "pt": "Regime",
+              "en": "Regime"
+            },
+            {
+              "pt": "Fresco g/planta",
+              "en": "Fresh g/plant"
+            },
+            {
+              "pt": "Seco g/planta",
+              "en": "Dry g/plant"
+            },
+            {
+              "pt": "n fresco / seco",
+              "en": "n fresh / dry"
+            }
+          ],
+          "rows": [
+            [
+              "T1",
+              57.66,
+              2.845,
+              "188 / 188"
+            ],
+            [
+              "T2",
+              46.87,
+              2.364,
+              "191 / 190"
+            ]
+          ],
+          "note": {
+            "pt": "Três sistemas por regime; +23,0% fresco e +20,4% seco. Não são efeitos causais isolados.",
+            "en": "Three systems per regime; +23.0% fresh and +20.4% dry. Not isolated causal effects."
+          }
+        }
+      ],
+      "source_url": "https://doi.org/10.1002/fes3.70220"
+    },
+    {
+      "id": "bruni",
+      "cultivar": "Salanova",
+      "title": {
+        "pt": "Salanova · solução alcalina e contexto biológico",
+        "en": "Salanova · alkaline solution and biological context"
+      },
+      "summary": {
+        "pt": "Observações de solução pH 7,47–8,36; sobreposição numérica parcial com Phoenix. Não é faixa ótima nem ensaio causal de pH.",
+        "en": "Observed solution pH 7.47–8.36; partial numerical overlap with Phoenix. Not an optimum range or causal pH experiment."
+      },
+      "design": {
+        "pt": "20 caixas, uma por combinação completa; 6 plantas por caixa; colheita publicada em três grupos de duas plantas. 380 linhas temporais, apenas 40 perfis iônicos.",
+        "en": "20 boxes, one per full combination;6 plants per box; published harvest in three pools of two plants.380 time rows, only 40 ion profiles."
+      },
+      "chemistry": {
+        "pt": "220 leituras de pH;21 linhas com pH, EC e seis íons Na, K, Ca, Mg, SO4, Cl juntos. Bases de nitrato/fosfato não resolvidas.",
+        "en": "220 pH readings;21 rows with pH, EC and six ions Na, K, Ca, Mg, SO4, Cl together. Nitrate/phosphate mass bases unresolved."
+      },
+      "limitations": {
+        "pt": "Fonte nutricional, microrganismos e Pythium são fatores cruzados/combinados; uma caixa por célula completa. Sem NH4/perclorato. EC intermediária mistura escalas; apenas endpoints verificados usados.",
+        "en": "Nutrient source, microbes and Pythium are crossed/combined factors; one box per full cell. No NH4/perchlorate. Intermediate EC mixes scales; only verified endpoints used."
+      },
+      "tables": [
+        {
+          "title": {
+            "pt": "Íons da solução: médias de cinco células de tratamento",
+            "en": "Solution ions: means across five treatment cells"
+          },
+          "columns": [
+            {
+              "pt": "Fonte",
+              "en": "Source"
+            },
+            {
+              "pt": "Pythium",
+              "en": "Pythium"
+            },
+            {
+              "pt": "Dia",
+              "en": "Day"
+            },
+            {
+              "pt": "Íon mg/L",
+              "en": "Ion mg/L"
+            },
+            {
+              "pt": "Média",
+              "en": "Mean"
+            },
+            {
+              "pt": "Caixas com valor",
+              "en": "Boxes with value"
+            }
+          ],
+          "rows": [
+            [
+              "HP",
+              "unexposed",
+              26,
+              "na",
+              530.831,
+              5
+            ],
+            [
+              "HP",
+              "unexposed",
+              26,
+              "k",
+              19.283,
+              5
+            ],
+            [
+              "HP",
+              "unexposed",
+              26,
+              "ca",
+              61.012,
+              5
+            ],
+            [
+              "HP",
+              "unexposed",
+              26,
+              "mg",
+              15.08,
+              5
+            ],
+            [
+              "HP",
+              "unexposed",
+              26,
+              "so4",
+              35.155,
+              5
+            ],
+            [
+              "HP",
+              "unexposed",
+              26,
+              "cl",
+              950.528,
+              5
+            ],
+            [
+              "HP",
+              "unexposed",
+              60,
+              "na",
+              488.379,
+              5
+            ],
+            [
+              "HP",
+              "unexposed",
+              60,
+              "k",
+              null,
+              0
+            ],
+            [
+              "HP",
+              "unexposed",
+              60,
+              "ca",
+              59.986,
+              5
+            ],
+            [
+              "HP",
+              "unexposed",
+              60,
+              "mg",
+              11.674,
+              5
+            ],
+            [
+              "HP",
+              "unexposed",
+              60,
+              "so4",
+              38.503,
+              5
+            ],
+            [
+              "HP",
+              "unexposed",
+              60,
+              "cl",
+              1164.135,
+              5
+            ],
+            [
+              "AE",
+              "unexposed",
+              26,
+              "na",
+              496.829,
+              5
+            ],
+            [
+              "AE",
+              "unexposed",
+              26,
+              "k",
+              18.828,
+              5
+            ],
+            [
+              "AE",
+              "unexposed",
+              26,
+              "ca",
+              38.582,
+              5
+            ],
+            [
+              "AE",
+              "unexposed",
+              26,
+              "mg",
+              8.482,
+              5
+            ],
+            [
+              "AE",
+              "unexposed",
+              26,
+              "so4",
+              11.435,
+              5
+            ],
+            [
+              "AE",
+              "unexposed",
+              26,
+              "cl",
+              1052.165,
+              5
+            ],
+            [
+              "AE",
+              "unexposed",
+              60,
+              "na",
+              381.806,
+              5
+            ],
+            [
+              "AE",
+              "unexposed",
+              60,
+              "k",
+              null,
+              0
+            ],
+            [
+              "AE",
+              "unexposed",
+              60,
+              "ca",
+              32.41,
+              5
+            ],
+            [
+              "AE",
+              "unexposed",
+              60,
+              "mg",
+              6.011,
+              5
+            ],
+            [
+              "AE",
+              "unexposed",
+              60,
+              "so4",
+              7.304,
+              5
+            ],
+            [
+              "AE",
+              "unexposed",
+              60,
+              "cl",
+              845.186,
+              5
+            ],
+            [
+              "HP",
+              "exposed",
+              26,
+              "na",
+              533.2,
+              5
+            ],
+            [
+              "HP",
+              "exposed",
+              26,
+              "k",
+              18.627,
+              5
+            ],
+            [
+              "HP",
+              "exposed",
+              26,
+              "ca",
+              64.623,
+              5
+            ],
+            [
+              "HP",
+              "exposed",
+              26,
+              "mg",
+              15.765,
+              5
+            ],
+            [
+              "HP",
+              "exposed",
+              26,
+              "so4",
+              35.842,
+              5
+            ],
+            [
+              "HP",
+              "exposed",
+              26,
+              "cl",
+              972.79,
+              5
+            ],
+            [
+              "HP",
+              "exposed",
+              60,
+              "na",
+              416.144,
+              5
+            ],
+            [
+              "HP",
+              "exposed",
+              60,
+              "k",
+              null,
+              0
+            ],
+            [
+              "HP",
+              "exposed",
+              60,
+              "ca",
+              48.359,
+              5
+            ],
+            [
+              "HP",
+              "exposed",
+              60,
+              "mg",
+              10.052,
+              5
+            ],
+            [
+              "HP",
+              "exposed",
+              60,
+              "so4",
+              30.825,
+              5
+            ],
+            [
+              "HP",
+              "exposed",
+              60,
+              "cl",
+              899.009,
+              5
+            ],
+            [
+              "AE",
+              "exposed",
+              26,
+              "na",
+              581.88,
+              5
+            ],
+            [
+              "AE",
+              "exposed",
+              26,
+              "k",
+              20.289,
+              5
+            ],
+            [
+              "AE",
+              "exposed",
+              26,
+              "ca",
+              47.228,
+              5
+            ],
+            [
+              "AE",
+              "exposed",
+              26,
+              "mg",
+              9.71,
+              5
+            ],
+            [
+              "AE",
+              "exposed",
+              26,
+              "so4",
+              11.277,
+              5
+            ],
+            [
+              "AE",
+              "exposed",
+              26,
+              "cl",
+              1047.118,
+              5
+            ],
+            [
+              "AE",
+              "exposed",
+              60,
+              "na",
+              335.288,
+              5
+            ],
+            [
+              "AE",
+              "exposed",
+              60,
+              "k",
+              3.807,
+              1
+            ],
+            [
+              "AE",
+              "exposed",
+              60,
+              "ca",
+              26.982,
+              5
+            ],
+            [
+              "AE",
+              "exposed",
+              60,
+              "mg",
+              5.406,
+              5
+            ],
+            [
+              "AE",
+              "exposed",
+              60,
+              "so4",
+              7.466,
+              5
+            ],
+            [
+              "AE",
+              "exposed",
+              60,
+              "cl",
+              859.234,
+              5
+            ]
+          ],
+          "note": {
+            "pt": "Não são cinco réplicas do mesmo tratamento. Valores ausentes ficam vazios; K final falta em 19/20 caixas.",
+            "en": "Not five replicates of the same treatment. Missing values remain blank; final K is missing in 19/20 boxes."
+          }
+        },
+        {
+          "title": {
+            "pt": "Massa fresca aérea publicada: resumo",
+            "en": "Published shoot fresh mass: summary"
+          },
+          "columns": [
+            {
+              "pt": "Fonte",
+              "en": "Source"
+            },
+            {
+              "pt": "Pythium",
+              "en": "Pythium"
+            },
+            {
+              "pt": "Média g reportados",
+              "en": "Mean reported g"
+            },
+            {
+              "pt": "Mín.–máx. de células",
+              "en": "Cell min–max"
+            }
+          ],
+          "rows": [
+            [
+              "HP",
+              "unexposed",
+              177.84,
+              "152.9–192.5"
+            ],
+            [
+              "AE",
+              "unexposed",
+              107.04,
+              "97.5–112.9"
+            ],
+            [
+              "HP",
+              "exposed",
+              184.24,
+              "168.0–195.6"
+            ],
+            [
+              "AE",
+              "exposed",
+              126.56,
+              "96.8–160.8"
+            ]
+          ],
+          "note": {
+            "pt": "Médias de cinco condições microbianas; pesagem agrupada, não rotulada g/planta. HP: solução hidropônica; AE: efluente de aquicultura.",
+            "en": "Means across five microbial conditions; pooled weighing, not relabeled g/plant. HP: hydroponic solution; AE: aquaculture effluent."
+          }
+        }
+      ],
+      "source_url": "https://doi.org/10.3390/w15112109"
+    },
+    {
+      "id": "ha",
+      "cultivar": "Crispino / Adriana",
+      "title": {
+        "pt": "Perclorato · absorção, não produtividade",
+        "en": "Perchlorate · uptake, not productivity"
+      },
+      "summary": {
+        "pt": "Perclorato medido em tecidos; crescimento não comprova segurança alimentar. Não aplicamos os modelos publicados à Phoenix.",
+        "en": "Perchlorate measured in tissues; growth does not establish food safety. Published models are not applied to Phoenix."
+      },
+      "design": {
+        "pt": "10 receitas,30 tanques de areia,3 por receita; independência dos reservatórios não totalmente resolvida. Cultivares e tecidos do tanque são correlacionados.",
+        "en": "10 recipes,30 sand tanks,3 per recipe; reservoir independence not fully resolved. Cultivars and tissues within tank are correlated."
+      },
+      "chemistry": {
+        "pt": "Água: ClO4 nominal40/220/400 nmolc/L (≈4/22/40 µg/L), NO3 2–20 mmolc/L, Cl 2,5–25 mmolc/L. Tecido:µg/kg fresco, LOD1,6.",
+        "en": "Water: nominal ClO4 40/220/400 nmolc/L (≈4/22/40 µg/L), NO3 2–20 mmolc/L, Cl 2.5–25 mmolc/L. Tissue:µg/kg fresh weight, LOD1.6."
+      },
+      "limitations": {
+        "pt": "Sem endpoint bruto de biomassa/produtividade; censura não é zero. Sem previsão de tecido, dose alimentar ou aprovação para consumo; coeficientes não republicados; escala dos preditores não resolvida.",
+        "en": "No raw biomass/yield endpoint; censoring is not zero. No tissue prediction, dietary dose or consumption clearance; coefficients not republished; predictor scaling unresolved."
+      },
+      "tables": [
+        {
+          "title": {
+            "pt": "Observações abaixo do LOD de tecido",
+            "en": "Tissue observations below LOD"
+          },
+          "columns": [
+            {
+              "pt": "Cultivar",
+              "en": "Cultivar"
+            },
+            {
+              "pt": "Folhas externas",
+              "en": "Outer leaves"
+            },
+            {
+              "pt": "Folhas internas",
+              "en": "Inner leaves"
+            },
+            {
+              "pt": "Raízes",
+              "en": "Roots"
+            }
+          ],
+          "rows": [
+            [
+              "Crispino",
+              "0/30",
+              "18/30",
+              "1/30"
+            ],
+            [
+              "Adriana",
+              "0/30",
+              "6/30",
+              "5/30"
+            ]
+          ],
+          "note": {
+            "pt": "Contagens publicadas; censura não é zero. LOD1,6 µg/kg fresco; tecidos compartilham tanques.",
+            "en": "Published counts; censoring is not zero.LOD1.6 µg/kg fresh weight; tissues share tanks."
+          }
+        }
+      ],
+      "source_url": "https://doi.org/10.2134/jeq2012.0142"
+    }
+  ],
+  "sources": [
+    {
+      "id": "pellegri",
+      "label": "Pellegri et al. 2026 · Grand Rapids",
+      "url": "https://doi.org/10.3389/fspas.2026.1687731",
+      "rights": "CC BY 4.0; attributed derived summaries"
+    },
+    {
+      "id": "bannon",
+      "label": "Bannon et al. 2026 · Red Batavia",
+      "url": "https://doi.org/10.1002/fes3.70220"
+    },
+    {
+      "id": "bannon_data",
+      "label": "Bannon source dataset",
+      "url": "https://doi.org/10.5281/zenodo.18804397",
+      "rights": "CC BY 4.0; attributed derived summaries"
+    },
+    {
+      "id": "bruni",
+      "label": "Bruni et al. 2023 · Salanova",
+      "url": "https://doi.org/10.3390/w15112109",
+      "rights": "CC BY 4.0; attributed derived summaries"
+    },
+    {
+      "id": "ha",
+      "label": "Ha et al. 2013 · Crispino / Adriana",
+      "url": "https://doi.org/10.2134/jeq2012.0142",
+      "rights": "Minimal factual summary and citation only; paper and fitted coefficients not redistributed"
+    }
+  ],
+  "scope": {
+    "pt": "Semelhanças parciais em parâmetros específicos, não equivalência química. Mesmos íons não significam concentrações ou efeitos iguais. Nenhum modelo conjunto de crescimento, ranking entre cultivares ou probabilidade de cultivo em Marte.",
+    "en": "Partial similarities in specific parameters, not chemical equivalence. Shared ions do not mean equal concentrations or effects. No joint growth model, cross-cultivar ranking or Mars cultivation probability."
+  },
+  "review_status": {
+    "pt": "Análise secundária assistida por IA de experimentos dos autores citados; não são novos experimentos nossos. Revisão científica humana para interpretação/publicação permanece pendente.",
+    "en": "AI-assisted secondary analysis of experiments by the cited authors; not new experiments by us. Human scientific review for interpretation/publication remains pending."
+  },
+  "input_sha256": {
+    "esa/run_level_chemistry_outcome_join.csv": "ee18797d4770cc7c62edd8017a1d77c51a2446cae8603e5ad645c0ff670b3c22",
+    "bannon/system_chemistry_summary.csv": "fb0b1096dfef668407498044c6264203057d7b1515eb921a03a43063ae8c71a1",
+    "bruni/data/source_pathogen_descriptive_summary.csv": "5ff319c2e0547aa18b86a1d6be18dcdd7e8704bc0cca9db78dc56756816e880b"
+  },
+  "ph_observation": {
+    "study": "bruni",
+    "min": 7.47,
+    "max": 8.36,
+    "readings": 220,
+    "basis": "Observed solution readings across boxes/times; not an optimal range"
+  },
+  "curated_fact_provenance": {
+    "Bannon_harvest": "Manually transcribed rounded equal-system means and counts from reviewed bannon/regime_outcome_summary.csv, all_available yield-component FW/DW; not computed from the bundled chemistry CSV.",
+    "Bruni_pH_range": "Curated from bruni/data/coverage.json and independently checked against raw Water XLSX:220 numeric readings,min7.47,max8.36; not computed from the grouped ion CSV.",
+    "Ha": "Minimal published design/censoring facts, DOI10.2134/jeq2012.0142; not a model implementation."
+  }
+}
