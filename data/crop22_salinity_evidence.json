@@ -1,0 +1,143 @@
+{
+  "dataset": "Small curated factual USDA crop-salinity reference subset",
+  "created": "2026-10-29",
+  "source_url": "https://www.ars.usda.gov/pacific-west-area/riverside-ca/agricultural-water-efficiency-and-salinity-research-unit/docs/databases/fgs-crops/",
+  "source_attribution": "USDA Agricultural Research Service, U.S. Salinity Laboratory, Fiber, Grain and Special Crops, accessed 29 October 2026. Endpoint identification cross-checked in FAO Irrigation and Drainage Paper 61, Annex 1.",
+  "rights_note": "Small factual numerical extraction, not reproduction of the full table, slopes, images or source prose. No new CC licence asserted for the source publication. ARS describes official-duty US Government authorship as public-domain in the United States; third-party publication assets are not assumed to share that status.",
+  "rights_context_url": "https://www.ars.usda.gov/ott/templates-agreements/",
+  "limitations": [
+    "Guidelines for relative terrestrial tolerance; climate, soil, management, growth stage and cultivars change responses.",
+    "The salinity composition is important; chloride-dominated reference conditions do not establish sulfate or perchlorate tolerance.",
+    "Gypsum changes the relation of saturated-extract EC to plant-experienced osmotic conditions; do not apply a universal correction to Mars.",
+    "Threshold alone does not support calculation of yield above threshold; slopes deliberately omitted.",
+    "Phoenix dilute WCL EC has a different extraction protocol; no direct threshold ranking or subtraction.",
+    "No numeric Ca/Mg/Na/Cl/SO4 or perchlorate toxicity limits are provided."
+  ],
+  "excluded_method_exceptions": [
+    {
+      "crop22_label": "rice",
+      "scientific_name": "Oryza sativa",
+      "ecoport_id": 1574,
+      "threshold_ds_m": 3.0,
+      "unit": "dS/m",
+      "endpoint": "Grain yield",
+      "endpoint_source_url": "https://www.fao.org/4/y4263e/y4263e0e.htm",
+      "rating": "S",
+      "method": "Electrical conductivity of soil water while paddy plants are submerged; flooded-growing-condition exception, NOT standard ECe",
+      "source_url": "https://www.ars.usda.gov/pacific-west-area/riverside-ca/agricultural-water-efficiency-and-salinity-research-unit/docs/databases/fgs-crops/",
+      "phoenix_wcl_direct_comparison_allowed": false,
+      "future_matched_method_computation_allowed": false,
+      "exclude_from_standard_ece_computation": true,
+      "specific_caution": "Less tolerant during seedling stage. Do not represent as a standard saturated-paste ECe threshold."
+    }
+  ],
+  "uncovered_crop22_labels": [
+    "chickpea",
+    "pigeonpeas",
+    "mothbeans",
+    "mungbean",
+    "blackgram",
+    "lentil",
+    "pomegranate",
+    "banana",
+    "mango",
+    "grapes",
+    "watermelon",
+    "muskmelon",
+    "apple",
+    "orange",
+    "papaya",
+    "coconut",
+    "jute",
+    "coffee"
+  ],
+  "coverage": {
+    "standard_ece_threshold_records": 3,
+    "flooded_rice_exception_records": 1,
+    "other_labels_no_numeric_record_in_this_subset": 18
+  },
+  "additional_research_links_only": [
+    {
+      "title": "FAO crop salt tolerance annex, wider but incomplete crop coverage",
+      "url": "https://www.fao.org/4/y4263e/y4263e0e.htm",
+      "reuse_note": "Not imported; publication-level reuse is not assumed to be the EcoCrop CC BY4 licence."
+    },
+    {
+      "title": "FAO ion-specific chloride/sodium/boron tables",
+      "url": "https://www.fao.org/4/T0234e/T0234E05.htm",
+      "reuse_note": "Not imported; measurement basis and management context vary across tables."
+    }
+  ],
+  "entries": [
+    {
+      "crop22_label": "kidneybeans",
+      "scientific_name": "Phaseolus vulgaris",
+      "ecoport_id": 1668,
+      "threshold_ds_m": 1.0,
+      "endpoint": "Seed yield",
+      "endpoint_source_url": "https://www.fao.org/4/y4263e/y4263e0e.htm",
+      "rating": "S",
+      "method": "ECe: electrical conductivity of saturated-soil paste extract, root-zone salinity reference",
+      "threshold_meaning": "Reference salinity at onset of endpoint reduction in terrestrial crop tolerance model, not lethal survival limit",
+      "unit": "dS/m",
+      "source_url": "https://www.ars.usda.gov/pacific-west-area/riverside-ca/agricultural-water-efficiency-and-salinity-research-unit/docs/databases/fgs-crops/",
+      "numeric_source": "USDA-ARS U.S. Salinity Laboratory, Fiber, Grain and Special Crops table (Maas 1990 as attributed on page)",
+      "phoenix_wcl_direct_comparison_allowed": false,
+      "future_matched_method_computation_allowed": true,
+      "comparison_eligible": true
+    },
+    {
+      "crop22_label": "maize",
+      "scientific_name": "Zea mays",
+      "ecoport_id": 2175,
+      "threshold_ds_m": 1.7,
+      "endpoint": "Ear fresh weight",
+      "endpoint_source_url": "https://www.fao.org/4/y4263e/y4263e0e.htm",
+      "rating": "MS",
+      "specific_caution": "Do not substitute forage or cultivar-specific values; USDA footnote reports materially different response for DeKalb XL-75 on organic muck soil.",
+      "method": "ECe: electrical conductivity of saturated-soil paste extract, root-zone salinity reference",
+      "threshold_meaning": "Reference salinity at onset of endpoint reduction in terrestrial crop tolerance model, not lethal survival limit",
+      "unit": "dS/m",
+      "source_url": "https://www.ars.usda.gov/pacific-west-area/riverside-ca/agricultural-water-efficiency-and-salinity-research-unit/docs/databases/fgs-crops/",
+      "numeric_source": "USDA-ARS U.S. Salinity Laboratory, Fiber, Grain and Special Crops table (Maas 1990 as attributed on page)",
+      "phoenix_wcl_direct_comparison_allowed": false,
+      "future_matched_method_computation_allowed": true,
+      "comparison_eligible": true
+    },
+    {
+      "crop22_label": "cotton",
+      "scientific_name": "Gossypium hirsutum",
+      "ecoport_id": 1160,
+      "threshold_ds_m": 7.7,
+      "endpoint": "Seed cotton yield",
+      "endpoint_source_url": "https://www.fao.org/4/y4263e/y4263e0e.htm",
+      "rating": "T",
+      "specific_caution": "Only Gossypium hirsutum. Do not apply to G. barbadense, G. arboreum or G. herbaceum. Require explicit species selection for generic Crop22 cotton.",
+      "method": "ECe: electrical conductivity of saturated-soil paste extract, root-zone salinity reference",
+      "threshold_meaning": "Reference salinity at onset of endpoint reduction in terrestrial crop tolerance model, not lethal survival limit",
+      "unit": "dS/m",
+      "source_url": "https://www.ars.usda.gov/pacific-west-area/riverside-ca/agricultural-water-efficiency-and-salinity-research-unit/docs/databases/fgs-crops/",
+      "numeric_source": "USDA-ARS U.S. Salinity Laboratory, Fiber, Grain and Special Crops table (Maas 1990 as attributed on page)",
+      "phoenix_wcl_direct_comparison_allowed": false,
+      "future_matched_method_computation_allowed": true,
+      "comparison_eligible": true
+    },
+    {
+      "crop22_label": "rice",
+      "scientific_name": "Oryza sativa",
+      "ecoport_id": 1574,
+      "threshold_ds_m": 3.0,
+      "unit": "dS/m",
+      "endpoint": "Grain yield",
+      "endpoint_source_url": "https://www.fao.org/4/y4263e/y4263e0e.htm",
+      "rating": "S",
+      "method": "Electrical conductivity of soil water while paddy plants are submerged; flooded-growing-condition exception, NOT standard ECe",
+      "source_url": "https://www.ars.usda.gov/pacific-west-area/riverside-ca/agricultural-water-efficiency-and-salinity-research-unit/docs/databases/fgs-crops/",
+      "phoenix_wcl_direct_comparison_allowed": false,
+      "future_matched_method_computation_allowed": false,
+      "exclude_from_standard_ece_computation": true,
+      "specific_caution": "Less tolerant during seedling stage. Do not represent as a standard saturated-paste ECe threshold.",
+      "comparison_eligible": false
+    }
+  ]
+}

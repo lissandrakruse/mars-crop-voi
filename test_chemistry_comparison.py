@@ -39,7 +39,7 @@ class ComparisonTests(unittest.TestCase):
         self.assertEqual(rye['ece_threshold_ds_m'], 11.4)
         self.assertFalse(rye['exceeds_threshold'])
     def test_invalid_inputs(self):
-        for x in [-1,41,float('nan'),float('inf'),True,'3','bad',[],{}]:
+        for x in [10**400,-1,41,float('nan'),float('inf'),True,'3','bad',[],{}]:
             with self.assertRaises((ValueError, TypeError)): compare(x)
         for sample in ['mars','',None]:
             with self.assertRaises(ValueError): compare(sample=sample)
@@ -82,7 +82,7 @@ class HTTPTests(unittest.TestCase):
             for field in ['ph_evidence_en','caveat_en','perchlorate_evidence_en']: self.assertTrue(row[field])
         for source in d['sources']: self.assertTrue(source['label_en'])
     def test_bad_requests(self):
-        for payload in [{'ece':-1},{'ece':True},{'ece':'3'},{'sample':'bad'},{'ph':7.7},[],{'ece':float('nan')}]:
+        for payload in [{'ece':10**400},{'ece':-1},{'ece':True},{'ece':'3'},{'sample':'bad'},{'ph':7.7},[],{'ece':float('nan')}]:
             with self.assertRaises(urllib.error.HTTPError) as err:self.post(payload)
             self.assertEqual(err.exception.code,400)
     def test_original_success_route(self):

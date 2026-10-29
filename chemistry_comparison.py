@@ -15,7 +15,7 @@ def compare(ece=None, sample='RR'):
     if ece is not None:
         if isinstance(ece, bool) or not isinstance(ece, (int, float)):
             raise ValueError('ECe must be a finite nonnegative number or null')
-        if not math.isfinite(ece) or not 0 <= ece <= 40:
+        if not 0 <= ece <= 40 or not math.isfinite(ece):
             raise ValueError('Scenario ECe must be between 0 and 40 dS/m')
     evidence = json.loads((ROOT / 'data/crop_chemistry_evidence.json').read_text())
     phoenix = json.loads((ROOT / 'data/phoenix_reference.json').read_text())

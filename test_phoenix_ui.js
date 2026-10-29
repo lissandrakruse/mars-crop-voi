@@ -13,3 +13,4 @@ setImmediate(async()=>{
  q('phxReset').onclick();q('phxReset').onclick();assert.doesNotMatch(q('phxContent').innerHTML,/value="8.1"/);
  console.log('PASS: sample switching, missing qualifiers, language draft retention, export separation/nulls, invalid values, repeated reset (mock DOM; visual QA not covered)');
 });
+

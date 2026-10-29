@@ -7,6 +7,7 @@ from scenario_model import scenario
 from sweep_model import sweep
 from transfer_model import transfer
 from chemistry_comparison import compare
+from crop22_comparison import compare_crop22
 ROOT=Path(__file__).parent
 class Handler(BaseHTTPRequestHandler):
     def respond(self,body,kind='application/json',status=200):
@@ -14,6 +15,8 @@ class Handler(BaseHTTPRequestHandler):
         self.send_response(status);self.send_header('Content-Type',kind);self.send_header('Content-Length',str(len(body)));self.end_headers();self.wfile.write(body)
     def do_GET(self):
         if self.path=='/health':self.respond({'status':'ok','model':'pot-level-cultivation-success-v2'})
+        elif self.path=='/api/crop22-comparison':self.respond(compare_crop22())
+        elif self.path=='/crop22-comparison.js':self.respond((ROOT/'crop22-comparison.js').read_bytes(),'text/javascript; charset=utf-8')
         elif self.path=='/api/chemistry-comparison':self.respond(compare())
         elif self.path=='/chemistry-comparison.js':self.respond((ROOT/'chemistry-comparison.js').read_bytes(),'text/javascript; charset=utf-8')
         elif self.path=='/api/phoenix-reference':self.respond(json.loads((ROOT/'data/phoenix_reference.json').read_text()))
@@ -38,12 +41,15 @@ class Handler(BaseHTTPRequestHandler):
         elif self.path=='/':self.respond((ROOT/'index.html').read_bytes(),'text/html; charset=utf-8')
         else:self.respond({'error':'Not found'},status=404)
     def do_POST(self):
-        if self.path not in ['/api/success','/api/scenario','/api/sweep','/api/transfer','/api/chemistry-comparison']:self.respond({'error':'Not found'},status=404);return
+        if self.path not in ['/api/success','/api/scenario','/api/sweep','/api/transfer','/api/chemistry-comparison','/api/crop22-comparison']:self.respond({'error':'Not found'},status=404);return
         try:
             size=int(self.headers.get('Content-Length','0'))
             if not 0<size<=10000:raise ValueError('Invalid request size')
             p=json.loads(self.rfile.read(size))
             if not isinstance(p,dict):raise ValueError('Expected JSON object')
+            if self.path=='/api/crop22-comparison':
+                if set(p)-{'ece','sample','selections'}:raise ValueError('Unknown Crop22 comparison fields')
+                self.respond(compare_crop22(**p));return
             if self.path=='/api/chemistry-comparison':
                 if set(p)-{'ece','sample'}:raise ValueError('Unknown comparison fields')
                 self.respond(compare(**p));return

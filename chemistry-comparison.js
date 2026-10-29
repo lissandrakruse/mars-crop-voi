@@ -7,7 +7,7 @@
   const copy = {
     pt: {
       eyebrow:'VERSÃO 2 · COMPARAÇÃO CONDICIONAL',title:'Os dados da Phoenix mudam as candidatas?',
-      intro:'Comparamos as quatro culturas do simulador. <b>A química da Phoenix não permite recalcular uma ordem de sucesso em Marte.</b> Mas a evidência sobre sais distingue prioridades para ensaios, sob condições declaradas — sem misturar sobrevivência em vasos com produção de alimentos.',
+      intro:'Comparamos as quatro culturas do experimento Wamelink. <b>A química da Phoenix não permite recalcular uma ordem de sucesso em Marte.</b> Mas a evidência sobre sais distingue prioridades para ensaios, sob condições declaradas — sem misturar sobrevivência em vasos com produção de alimentos.',
       sample:'Amostra Phoenix',referenceWarning:'Medições de extrato WCL em um sítio da Phoenix: não representam todo Marte. <b>EC do extrato Phoenix não é ECe agrícola.</b> Nenhuma conversão foi presumida. <a href="#phoenixV2">Ver unidades, erros e fontes de todos os íons ↓</a>',
       tableTitle:'Antes × evidência química × cenário',scenarioTitle:'Experimente uma hipótese independente',scenarioIntro:'Informe a <b>ECe de um substrato preparado</b> para investigar a sinalização de estresse salino. Os exemplos são hipóteses didáticas, não medições da Phoenix nem recomendações de cultivo.',
       eceLabel:'ECe hipotética (dS/m)',run:'Comparar cenário',clear:'Limpar',examples:'Exemplos hipotéticos:',
@@ -23,7 +23,7 @@
     },
     en: {
       eyebrow:'VERSION 2 · CONDITIONAL COMPARISON',title:'Does Phoenix evidence change the crop candidates?',
-      intro:'We compare the simulator’s four crops. <b>Phoenix chemistry does not identify a new Mars success ranking.</b> Salt-response evidence can distinguish priorities for experiments under stated conditions—without conflating pot survival with food production.',
+      intro:'We compare the four crops from the Wamelink experiment. <b>Phoenix chemistry does not identify a new Mars success ranking.</b> Salt-response evidence can distinguish priorities for experiments under stated conditions—without conflating pot survival with food production.',
       sample:'Phoenix sample',referenceWarning:'WCL extract measurements from one Phoenix landing site, not all of Mars. <b>Phoenix extract EC is not agricultural ECe.</b> No conversion was assumed. <a href="#phoenixV2">See all ion units, errors and sources ↓</a>',
       tableTitle:'Before × chemistry evidence × scenario',scenarioTitle:'Explore an independent hypothesis',scenarioIntro:'Enter the <b>ECe of a prepared substrate</b> to investigate salinity-stress flags. Examples are teaching hypotheses, not Phoenix measurements or cultivation recommendations.',
       eceLabel:'Hypothetical ECe (dS/m)',run:'Compare scenario',clear:'Clear',examples:'Hypothetical examples:',
