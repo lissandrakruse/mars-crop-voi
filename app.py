@@ -13,6 +13,8 @@ class Handler(BaseHTTPRequestHandler):
         self.send_response(status);self.send_header('Content-Type',kind);self.send_header('Content-Length',str(len(body)));self.end_headers();self.wfile.write(body)
     def do_GET(self):
         if self.path=='/health':self.respond({'status':'ok','model':'pot-level-cultivation-success-v2'})
+        elif self.path=='/api/phoenix-reference':self.respond(json.loads((ROOT/'data/phoenix_reference.json').read_text()))
+        elif self.path=='/phoenix.js':self.respond((ROOT/'phoenix.js').read_bytes(),'text/javascript; charset=utf-8')
         elif self.path=='/api/candidates':self.respond(json.loads((ROOT/'data/candidate_evidence.json').read_text()))
         elif self.path=='/api/crop-reference':
             crop=pd.read_csv(ROOT/'data/Crop_recommendation.csv')
@@ -55,3 +57,4 @@ class Handler(BaseHTTPRequestHandler):
             d['crop_comparison']=ranking(d['endpoint'],d['minimum']);self.respond(d)
         except (ValueError,KeyError,TypeError,json.JSONDecodeError) as e:self.respond({'error':str(e)},status=400)
 if __name__=='__main__':ThreadingHTTPServer(('0.0.0.0',int(os.environ.get('PORT','10000'))),Handler).serve_forever()
+
