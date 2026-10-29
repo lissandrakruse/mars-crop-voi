@@ -70,3 +70,25 @@ Sources: NASA PDS Phoenix WCL archive https://doi.org/10.17189/1518770; Kounaves
 The Wamelink outcome models, source data and original screening modules are unchanged. No ion-based causal growth model, treatment recommendation, mission success or food-safety claim is added. Baseline upstream commit: `057cd1052111d6bfb8efc93bfebd9bc8debe9b7d`.
 
 Checks: `node --check phoenix.js`; `python -m compileall -q app.py`; `python test_phoenix_v2.py` (browser test additionally needs Playwright and Chromium; not production dependencies). The optional baseline byte check needs a sibling `mars_crop_baseline_057cd105` directory. Tests validate software/data handling, not biological predictions.
+
+
+## Version 2.1 — what changes for the four existing crops?
+
+The main navigation now opens a PT/EN comparison of the unchanged Wamelink Mars-simulant result (18/20 tomato, 19/20 carrot, 20/20 garden cress, 20/20 rye pots with at least three living plants on day 50) against the limits of Phoenix chemical inference. RR/S1/S2 selection displays source-linked WCL pH, extract conductivity and perchlorate, retaining missing values and published errors. **Direct joint Phoenix viability remains unidentified; this is not evidence that the true crop ranking is unchanged.**
+
+A separate, blank-by-default prepared-substrate **ECe scenario** checks whether crop-specific literature yield thresholds are exceeded. ECe means root-zone saturated-paste extract conductivity in dS/m, not Phoenix WCL extract EC. The FAO Annex 1 Table A1.1 gives generic tomato fruit yield 2.5, carrot storage-root yield 1.0 and rye grain yield 11.4 dS/m. At an assumed ECe of 3, carrot and generic tomato exceed those thresholds while rye grain does not; garden cress has no compatible ECe harvest curve here and is not assigned a rank. This changes conditional stress flags and can guide experiments, **not Mars success probabilities or an overall planting recommendation**. At/below a threshold is not proof of suitability or food safety.
+
+The thresholds concern late seedlings through maturity under relatively uniform, predominantly chloride salinity and different harvest endpoints in different experiments. They are not standardized head-to-head crop outcomes. Rye shoot dry-weight has a different threshold (7.6); cherry tomato has a separate threshold (1.7). The source-trial cultivar is not harmonized with the generic reference. Published slopes are retained as evidence metadata but no relative-yield percentages are computed. The input guard 0–40 dS/m is not a validated model range.
+
+pH evidence is qualitative and qualified: tomato pH 7.5 chlorosis depends on Fe supply in a hydroponic experiment; absence of chlorosis does not imply unchanged biomass. Cress grew in a study reporting soil pH 7.6, but this is not a pH dose-response or Phoenix-method match. No crop-specific Phoenix-mixture/perchlorate growth or edible-tissue safety cutoff is inferred. Presence of Ca/Mg/K does not establish nutrient sufficiency; sulfate/perchlorate chemistry is not represented by chloride-salinity curves. Preparation, comparable substrate chemistry, independent crop experiments and edible-tissue testing remain required.
+
+- Sources and machine-readable endpoints: `data/crop_chemistry_evidence.json`; expanded research audit: `research/phoenix_tolerance/crop_tolerance_evidence.json`.
+- Backend: `chemistry_comparison.py`; independent UI: `chemistry-comparison.js`.
+- GET `/api/chemistry-comparison` returns the blank default; POST accepts only `ece` (number or null) and `sample` (`RR`, `S1`, `S2`). Existing crop APIs are unchanged.
+- Export includes the selected Phoenix reference, scenario assumptions, endpoint definitions, original counts, sources and explicit no-conversion/no-probability-change flags. It does not save user entries on the server.
+- `python -m unittest -v test_chemistry_comparison` checks nine cases including HTTP validation, sample missingness, threshold boundaries and all 60 original crop/endpoint/threshold outputs.
+- `node test_chemistry_ui.js` checks default/sample/example flows, export, invalid inputs, repeated clearing, stale-response protection and request failures with a mock DOM. `node test_phoenix_ui.js` covers the separate reference panel. These are not visual browser QA.
+
+The comparison has its own language selector. Switching language preserves selected sample, scenario values, computed flags and exported evidence; it does not change model inputs or send a new request. Exports retain both-language evidence metadata.
+
+No license change or redistribution of full source publications is made. Links and short factual evidence summaries preserve attribution; original project licensing and third-party source conditions remain applicable.

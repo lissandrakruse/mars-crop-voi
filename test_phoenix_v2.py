@@ -21,7 +21,7 @@ class PhoenixTests(unittest.TestCase):
   if not BASE.exists():self.skipTest('External pinned baseline copy unavailable')
   for f in BASE.rglob('*'):
    if f.is_file() and f.name not in ('app.py','index.html','README.md') and '__pycache__' not in f.parts:self.assertEqual(f.read_bytes(),(ROOT/f.relative_to(BASE)).read_bytes(),str(f))
-  base=(BASE/'app.py').read_text();updated=(ROOT/'app.py').read_text();self.assertIn(base[base.index('    def do_POST'):],updated)
+  base=(BASE/'app.py').read_text();updated=(ROOT/'app.py').read_text();self.assertIn(base[base.index("            if self.path=='/api/transfer':"):],updated)
  def test_existing_http_routes(self):
   for route in ['/','/health','/api/options','/api/mars','/api/candidates','/api/crop-reference','/phoenix.js']:
    self.assertEqual(urllib.request.urlopen('http://127.0.0.1:10081'+route).status,200)
@@ -46,3 +46,4 @@ class PhoenixTests(unittest.TestCase):
    self.assertLessEqual(page.evaluate('document.documentElement.scrollWidth'),390)
    self.assertEqual(errors,[]);browser.close()
 if __name__=='__main__':unittest.main(verbosity=2)
+

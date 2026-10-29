@@ -1,0 +1,133 @@
+{
+  "updated": "2026-10-29",
+  "method": {
+    "ec_basis": "ECe de extrato de pasta saturada na zona radicular, em dS/m. Não é a EC do extrato diluído WCL da Phoenix.",
+    "endpoint": "Limiares publicados de produção de frutos, raízes ou grãos; não germinação ou sobrevivência no dia 50.",
+    "conditions": "Referência para fim do estágio de plântula até maturidade, salinidade relativamente uniforme e sais predominantemente cloretos; não valida a mistura de perclorato/sulfato da Phoenix.",
+    "decision": "Acima do limiar: segmento de redução de produção na curva da fonte. No limiar/abaixo: não comprova aptidão, segurança alimentar ou ausência de outros estresses.",
+    "missing": "Dados ausentes não significam falha ou aptidão. Sem peso combinado de pH/íons e sem novo ranking de sucesso.",
+    "scenario_range": "0–40 dS/m é proteção da entrada, não faixa de validação. Calcula-se somente ultrapassagem do limiar; não porcentagem de rendimento.",
+    "cross_study": "Limiares de estudos diferentes, não ensaio direto padronizado entre as culturas. Não calibrados ao cultivar de Wamelink."
+  },
+  "sources": [
+    {
+      "id": "FAO2002",
+      "label": "FAO — Annex 1, Crop salt tolerance data, Table A1.1",
+      "url": "https://www.fao.org/4/y4263e/y4263e0e.htm",
+      "label_en": "FAO — Annex 1, Crop salt tolerance data, Table A1.1"
+    },
+    {
+      "id": "FRANCOIS1989",
+      "label": "Francois et al. (1989) — salinidade e produção de centeio",
+      "url": "https://www.ars.usda.gov/arsuserfiles/20361500/pdf_pubs/P1065.pdf",
+      "label_en": "Francois et al. (1989) — rye salinity and yield"
+    },
+    {
+      "id": "MUHAMMAD2010VEG",
+      "label": "Muhammad & Hussain (2010) — plantas em vasos sob NaCl",
+      "url": "https://www.pakbs.org/pjbot/PDFs/42(1)/PJB42(1)303.pdf",
+      "label_en": "Muhammad & Hussain (2010) — pot-grown plants under NaCl"
+    },
+    {
+      "id": "ZHAO2007",
+      "label": "Zhao et al. (2007) — pH e disponibilidade de ferro em tomate",
+      "url": "https://doi.org/10.1111/j.1365-3040.2007.01638.x",
+      "label_en": "Zhao et al. (2007) — tomato pH and iron availability"
+    },
+    {
+      "id": "JACKSON2005",
+      "label": "Jackson et al. (2005) — acúmulo de perclorato em vegetais",
+      "url": "https://doi.org/10.1021/jf0493021",
+      "label_en": "Jackson et al. (2005) — perchlorate accumulation in produce"
+    },
+    {
+      "id": "WAMELINK2014",
+      "label": "Wamelink et al. (2014) — resultados originais de vasos",
+      "url": "https://doi.org/10.1371/journal.pone.0103138",
+      "label_en": "Wamelink et al. (2014) — original pot outcomes"
+    }
+  ],
+  "crops": [
+    {
+      "species": "S. lycopersicum",
+      "name": "Tomato",
+      "name_pt": "Tomate",
+      "ece_threshold_ds_m": 2.5,
+      "published_slope_percent_per_ds_m": 9.9,
+      "endpoint": "fruit yield",
+      "source_url": "https://www.fao.org/4/y4263e/y4263e0e.htm",
+      "source_location": "FAO Annex 1, Table A1.1",
+      "caveat": "Síntese por cultura; não calibrada ao cultivar do ensaio Wamelink ou à Phoenix. Tomate genérico: 2,5 dS/m; tomate-cereja tem referência separada de 1,7. Cultivar original não harmonizado.",
+      "ph_cutoff": null,
+      "perchlorate_growth_cutoff": null,
+      "ph_evidence": "Tomate T3238 em hidroponia pH 7,5: sem clorose com Fe-EDTA fornecido, clorótico sem ferro. Isso não significa biomassa inalterada nem que pH alcalino seja inofensivo; não é um limiar universal para solo.",
+      "perchlorate_evidence": "Sem limite validado para esta cultura na mistura Phoenix. Crescimento não demonstra segurança da parte comestível. Há evidência de acúmulo em tecidos de tomate; não é uma curva de tolerância ou dose segura.",
+      "ph_evidence_en": "T3238 tomato at hydroponic pH 7.5: no chlorosis with supplied Fe-EDTA, chlorotic without iron. This does not mean unchanged biomass or harmless alkalinity; not a universal soil threshold.",
+      "perchlorate_evidence_en": "No validated cutoff for this crop in the Phoenix mixture. Growth does not demonstrate edible-part safety. Tomato tissue-accumulation evidence exists; not a tolerance curve or safe dose.",
+      "caveat_en": "Crop-level synthesis, not calibrated to the Wamelink cultivar or Phoenix. Generic tomato: 2.5 dS/m; cherry tomato has a separate 1.7 threshold. Original cultivar not harmonized."
+    },
+    {
+      "species": "D. carota",
+      "name": "Carrot",
+      "name_pt": "Cenoura",
+      "ece_threshold_ds_m": 1.0,
+      "published_slope_percent_per_ds_m": 14.0,
+      "endpoint": "storage-root yield",
+      "source_url": "https://www.fao.org/4/y4263e/y4263e0e.htm",
+      "source_location": "FAO Annex 1, Table A1.1",
+      "caveat": "Síntese por cultura; não calibrada ao cultivar do ensaio Wamelink ou à Phoenix.",
+      "ph_cutoff": null,
+      "perchlorate_growth_cutoff": null,
+      "ph_evidence": "Não estabelecemos um limiar de resposta ao pH com método comparável à Phoenix.",
+      "perchlorate_evidence": "Sem limite validado para esta cultura na mistura Phoenix. Crescimento não demonstra segurança da parte comestível.",
+      "ph_evidence_en": "No pH dose-response threshold with a Phoenix-comparable method was established here.",
+      "perchlorate_evidence_en": "No validated cutoff for this crop in the Phoenix mixture. Growth does not demonstrate edible-part safety.",
+      "caveat_en": "Crop-level synthesis, not calibrated to the Wamelink cultivar or Phoenix."
+    },
+    {
+      "species": "L. sativum",
+      "name": "Garden cress",
+      "name_pt": "Agrião-de-jardim",
+      "ece_threshold_ds_m": null,
+      "published_slope_percent_per_ds_m": null,
+      "endpoint": "no compatible ECe harvest-yield curve",
+      "source_url": "https://www.pakbs.org/pjbot/PDFs/42(1)/PJB42(1)303.pdf",
+      "source_location": "Muhammad & Hussain (2010), p.304",
+      "caveat": "Ensaio de vasos com NaCl; método de extração da EC não especificado como pasta saturada. Sem curva ECe de colheita comparável.",
+      "ph_cutoff": null,
+      "perchlorate_growth_cutoff": null,
+      "ph_evidence": "Crescimento observado em solo reportado com pH 7,6; não é ensaio de dose-resposta ao pH nem método harmonizado com a Phoenix.",
+      "perchlorate_evidence": "Sem limite validado para esta cultura na mistura Phoenix. Crescimento não demonstra segurança da parte comestível.",
+      "ph_evidence_en": "Growth observed in soil reported at pH 7.6; not a pH dose-response study or Phoenix-harmonized method.",
+      "perchlorate_evidence_en": "No validated cutoff for this crop in the Phoenix mixture. Growth does not demonstrate edible-part safety.",
+      "caveat_en": "NaCl pot experiment; EC extraction method not specified as saturated paste. No compatible harvest ECe curve."
+    },
+    {
+      "species": "S. cereale",
+      "name": "Rye",
+      "name_pt": "Centeio",
+      "ece_threshold_ds_m": 11.4,
+      "published_slope_percent_per_ds_m": 10.8,
+      "endpoint": "grain yield",
+      "source_url": "https://www.fao.org/4/y4263e/y4263e0e.htm",
+      "source_location": "FAO Annex 1, Table A1.1",
+      "caveat": "Síntese por cultura; não calibrada ao cultivar do ensaio Wamelink ou à Phoenix.",
+      "ph_cutoff": null,
+      "perchlorate_growth_cutoff": null,
+      "ph_evidence": "Não estabelecemos um limiar de resposta ao pH com método comparável à Phoenix.",
+      "perchlorate_evidence": "Sem limite validado para esta cultura na mistura Phoenix. Crescimento não demonstra segurança da parte comestível.",
+      "ph_evidence_en": "No pH dose-response threshold with a Phoenix-comparable method was established here.",
+      "perchlorate_evidence_en": "No validated cutoff for this crop in the Phoenix mixture. Growth does not demonstrate edible-part safety.",
+      "caveat_en": "Crop-level synthesis, not calibrated to the Wamelink cultivar or Phoenix."
+    }
+  ],
+  "method_en": {
+    "ec_basis": "Root-zone saturated-paste extract ECe in dS/m, not Phoenix dilute WCL extract EC.",
+    "endpoint": "Published fruit, storage-root or grain yield thresholds; not germination or day-50 survival.",
+    "conditions": "Late seedling stage through maturity, fairly uniform salinity and predominantly chloride salts; not validated for the Phoenix sulfate/perchlorate mixture.",
+    "decision": "Above the threshold: the yield-decline segment of the source curve. At/below: no proof of suitability, food safety or absence of other stresses.",
+    "missing": "Missing evidence is neither failure nor suitability. No combined pH/ion weighting or new success ranking.",
+    "scenario_range": "0–40 dS/m is an input guard, not a validated range. Only threshold exceedance is calculated, not yield percentages.",
+    "cross_study": "Thresholds come from different studies, not a standardized head-to-head trial. Not calibrated to the Wamelink cultivar."
+  }
+}

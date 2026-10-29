@@ -1,0 +1,161 @@
+{
+  "version": "2026-10-29-recovered",
+  "purpose": "Separate conditional tolerance assessment; never recalibration of baseline survival probabilities",
+  "sources": {
+    "FAO": {
+      "url": "https://www.fao.org/4/y4263e/y4263e0e.htm",
+      "type": "authoritative synthesis",
+      "method": "Mean rootzone saturated-paste ECe; fairly uniform salinity from late seedling to maturity; predominantly chloride salts",
+      "limitation": "Different experiments, not standardized head-to-head trial; sulfate-rich and perchlorate mixtures not validated",
+      "license": "Not verified; paraphrase facts with attribution"
+    },
+    "RYE1989": {
+      "url": "https://www.ars.usda.gov/arsuserfiles/20361500/pdf_pubs/P1065.pdf",
+      "doi": "10.2134/agronj1989.00021962008100050001x",
+      "type": "primary experiment",
+      "cultivars": [
+        "Maton",
+        "Bonel"
+      ],
+      "method": "Two-year field plots; Holtville silty clay; irrigation salinized with NaCl/CaCl2 1:1 mass; saturation-extract EC",
+      "limitation": "Emergence more sensitive than later growth; grain and straw endpoints differ",
+      "license": "USDA hosted; reuse license unverified"
+    },
+    "CRESS2010": {
+      "url": "https://www.pakbs.org/pjbot/PDFs/42(1)/PJB42(1)303.pdf",
+      "type": "primary experiment",
+      "method": "Four replicates of 5kg loamy soil pots; initial pH7.6 and8.75% CaCO3; NaCl applied to established seedlings; maturity biomass and survival",
+      "treatments_dS_m": [
+        0.21,
+        5,
+        7.5,
+        10,
+        12.5,
+        15
+      ],
+      "EC_extraction": "Unspecified; EC meter reported, not verified ECe",
+      "limitation": "No transferable threshold/slope; starting pH observation not pH dose-response",
+      "license": "Unverified"
+    },
+    "TOMATO_PH2007": {
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1365-3040.2007.01638.x",
+      "doi": "10.1111/j.1365-3040.2007.01638.x",
+      "type": "primary experiment",
+      "method": "T3238 and iron-inefficient mutant; hydroponic pH5.0 versus7.5; Fe and nitrogen forms manipulated",
+      "finding": "Wildtype lacked chlorosis at pH 7.5 with Fe-EDTA but became chlorotic without iron. Absence of chlorosis does not imply unchanged biomass or harmless alkalinity; no universal soil-pH exclusion threshold.",
+      "license": "Free access; reuse license unverified"
+    },
+    "TOMATO_CLO4_2005": {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15656674/",
+      "doi": "10.1021/jf0493021",
+      "type": "primary field/laboratory study",
+      "endpoint": "Tissue perchlorate accumulation",
+      "finding": "Tomato fruit accumulated less than leaves; contaminated-water garden samples contained perchlorate",
+      "limitation": "Not a growth threshold, food-safety certificate, or Phoenix dose response",
+      "license": "Abstract reviewed; reuse license unverified"
+    }
+  },
+  "crops": [
+    {
+      "crop": "Rye",
+      "species": "Secale cereale",
+      "endpoint": "grain yield",
+      "threshold_ECe_dS_m": 11.4,
+      "slope_pct_per_dS_m": 10.8,
+      "rating": "tolerant",
+      "sources": [
+        "FAO",
+        "RYE1989"
+      ],
+      "alternative": {
+        "endpoint": "shoot dry weight",
+        "threshold_ECe_dS_m": 7.6,
+        "slope_pct_per_dS_m": 4.9
+      }
+    },
+    {
+      "crop": "Tomato",
+      "species": "Solanum lycopersicum",
+      "endpoint": "fruit yield",
+      "threshold_ECe_dS_m": 2.5,
+      "slope_pct_per_dS_m": 9.9,
+      "rating": "moderately sensitive",
+      "sources": [
+        "FAO",
+        "TOMATO_PH2007",
+        "TOMATO_CLO4_2005"
+      ],
+      "cultivar_warning": "Baseline cultivar not verified; cherry tomato separately1.7/9.1 in FAO"
+    },
+    {
+      "crop": "Carrot",
+      "species": "Daucus carota",
+      "endpoint": "storage-root yield",
+      "threshold_ECe_dS_m": 1.0,
+      "slope_pct_per_dS_m": 14.0,
+      "rating": "sensitive",
+      "sources": [
+        "FAO"
+      ]
+    },
+    {
+      "crop": "Garden cress",
+      "species": "Lepidium sativum",
+      "endpoint": "NaCl survival/biomass evidence; no compatible ECe curve",
+      "threshold_ECe_dS_m": null,
+      "slope_pct_per_dS_m": null,
+      "rating": "quantitatively unresolved; not presumed intolerant",
+      "sources": [
+        "CRESS2010"
+      ]
+    }
+  ],
+  "phoenix_interpretation": {
+    "EC": {
+      "bridge_to_ECe_validated": false,
+      "instruction": "Phoenix WCL dilute extract EC is not saturated-paste ECe, irrigation-water EC or rhizosphere exposure; never insert it into these crop curves"
+    },
+    "pH": {
+      "crop_specific_cutoffs": null,
+      "instruction": "Phoenix extraction pH can flag alkaline nutrient-availability concerns, not establish a plantability cutoff; extraction method and treatment differ"
+    },
+    "Ca_Mg_K": {
+      "crop_specific_cutoffs": null,
+      "instruction": "Presence does not establish adequate nutrition, balance, bioavailability or absence of toxicity; no crop-ranking bonus"
+    },
+    "Na_Cl": {
+      "crop_specific_cutoffs": null,
+      "instruction": "Salinity relevance, but no Phoenix-mixture crop-specific dose-response verified; do not equate NaCl tests with full Phoenix mixture"
+    },
+    "SO4": {
+      "crop_specific_cutoffs": null,
+      "instruction": "Chloride-dominant ECe guidelines cannot be assumed valid for sulfate-rich mixtures; retain chemistry flag rather than automatic penalty"
+    },
+    "ClO4": {
+      "crop_specific_growth_cutoffs": null,
+      "instruction": "Retain unresolved growth and edible-tissue safety flag for every crop; tomato accumulation evidence means growth is not food safety"
+    },
+    "NH4": {
+      "crop_specific_cutoffs": null,
+      "instruction": "Preserve original detection/interference qualifier; no confirmed fertility credit or N-sufficiency inference"
+    }
+  },
+  "independent_scenario": {
+    "default_ECe": null,
+    "implemented_output": "Source-qualified threshold-exceedance flags only; no relative yield calculation",
+    "example_ECe_dS_m": 3,
+    "example_threshold_exceeded": {
+      "Rye": false,
+      "Tomato": true,
+      "Carrot": true,
+      "Garden cress": null
+    },
+    "forbidden": [
+      "Phoenix extract EC substitution",
+      "multiplication into day50 survival",
+      "joint pH-ion causal inference",
+      "food-safety certification"
+    ]
+  },
+  "conclusion": "For independent prepared-substrate ECe scenarios under chloride-dominant source conditions, grain-rye has a higher reported yield threshold than generic tomato fruit and carrot storage-root. This can motivate salinity-specific experiments, not rank absolute productivity or actual Phoenix viability. Cress remains quantitatively unresolved. The original model results are preserved, not newly validated under Phoenix chemistry."
+}
